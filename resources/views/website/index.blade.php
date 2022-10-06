@@ -20,7 +20,7 @@
                                                 class="breadcrumb-item active"
                                                 aria-current="page"
                                         >
-                                            Website Development 1
+                                            Website Development
                                         </li>
                                     </ol>
                                 </nav>
