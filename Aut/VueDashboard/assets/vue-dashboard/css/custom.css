@@ -1,0 +1,227 @@
+/* for ar language*/
+.text-truncate {
+    line-height: 1.4!important;
+}
+
+.text-decoration--none {
+    text-decoration: none;
+}
+
+.badge-size-13 .v-badge__badge {
+    height: 13px;
+    width: 13px;
+}
+.badge-size-10 .v-badge__badge {
+    height: 10px;
+    width: 10px;
+}
+.border-bottom-doted {
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+}
+
+.v-list.height-auto .v-list__tile {
+    height: auto;
+    margin-bottom: 24px;
+}
+
+.v-list.height-auto .v-list__tile__sub-title {
+    white-space: normal;
+}
+
+.move {
+    cursor: move;
+}
+.hand {
+    cursor: pointer;
+}
+
+.navigation-image .v-image__image.v-image__image--cover {
+    opacity: 0.2;
+}
+
+.force-ltr, .number {
+    direction: ltr;
+}
+
+.force-rtl{
+    direction: rtl;
+}
+
+.application--is-rtl .force-ltr .v-text-field__prefix {
+    padding-left: 0;
+    padding-right: 4px;
+}
+
+.force-ltr .v-messages__message {
+    float: left;
+}
+
+.fluid-extension .v-toolbar__extension{
+    padding: 0;
+}
+
+.application--is-rtl .number{
+    float: right;
+}
+
+.aleppo-text-area p {
+    line-height: 2;
+}
+.aleppo-text-area img {
+    max-width: 100%;
+    height: auto;
+}
+
+.prepend-input .v-input__prepend-outer{
+    margin: 0 !important;
+}
+
+table.v-table thead th {
+    font-weight: 700;
+}
+
+.v-offset {
+    position: absolute;
+    top: -20px;
+    margin-bottom: -20px;
+
+    display: inline-block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1;
+    flex: 0 1;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 0 16px;
+}
+
+.v-offset--all-width {
+    width: 100%;
+}
+
+.ck-editor-title {
+    margin-bottom: 8px
+}
+
+.ck.ck-content.ck-editor__editable {
+    margin-bottom: 22px;
+    max-height: 300px;
+}
+
+.dot-elastic {
+    margin: 12px auto;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    animation: dotElastic 1s infinite linear;
+}
+
+.dot-elastic::before, .dot-elastic::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.dot-elastic::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    animation: dotElasticBefore 1s infinite linear;
+}
+
+.dot-elastic::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    animation: dotElasticAfter 1s infinite linear;
+}
+
+@keyframes dotElasticBefore {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1.5);
+    }
+    50% {
+        transform: scale(1, 0.67);
+    }
+    75% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes dotElastic {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 1.5);
+    }
+    75% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes dotElasticAfter {
+    0% {
+        transform: scale(1, 1);
+
+    }
+    25% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 0.67);
+    }
+    75% {
+        transform: scale(1, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.v-alert.v-alert--border-info {
+    border-color: #2196f3 !important;
+}
+
+.v-alert.v-alert--border-info .v-alert__icon{
+    color: #2196f3;
+}
+.v-alert.v-alert--border-info .v-alert__dismissible .v-icon{
+    color: #2196f3;
+}
+
+.v-alert.v-alert--border-warning {
+    border-color: #fb8c00 !important;
+}
+
+.v-alert.v-alert--border-warning .v-alert__icon{
+    color: #fb8c00;
+}
+.v-alert.v-alert--border-warning .v-alert__dismissible .v-icon{
+    color: #fb8c00;
+}
+
+.vue2leaflet-map {
+    z-index: 1;
+}
+
+.v-btn--floating .v-icon{
+    height: unset;
+}

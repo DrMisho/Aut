@@ -1,0 +1,31 @@
+<?php
+
+namespace {{namespace}}\DataTables;
+
+use {{namespace}}\Models\{{modelName}};
+{{namespaces}}
+use Aut\VueDataTable\ApiResources\VueDataTable;
+
+class {{className}}DataTable extends VueDataTable
+{{{trait}}
+    public static $model = {{modelName}}::class;
+
+    public static $permissions = ['automata', 'admin'];
+
+    public static function fields()
+    {
+        return [
+            {{fields}}
+        ];
+    }
+{{actions}}{{filters}}
+    public static function title()
+    {
+        return trans('app.{{title}}');
+    }
+
+    public static function singular()
+    {
+        return trans('app.{{singular}}');
+    }
+}

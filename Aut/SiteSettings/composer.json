@@ -1,0 +1,32 @@
+{
+    "name": "aut/site-settings",
+    "description": "Dynamic configuration of site controlled by admins",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "laravel/framework": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aut\\SiteSettings\\": "src"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdulbasset",
+            "email": "ab_aboalnasser@automata4.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aut\\SiteSettings\\Providers\\SiteSettingsServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,146 @@
+html.dir-rtl ul,
+html.dir-rtl ul{
+    padding-right: 24px;
+    padding-left: unset;
+}
+
+html.dir-rtl .v-input__prepend-outer {
+    margin-right: initial;
+    margin-left: 9px;
+}
+
+html.dir-rtl .v-input.v-text-field.force-ltr .v-input__prepend-outer {
+    margin-right: 9px;
+    margin-left: initial;
+}
+
+html.dir-rtl .v-card__actions .v-btn + .v-btn {
+    margin-left: initial;
+    margin-right: 8px;
+}
+
+.v-toolbar__content > *:first-child.v-btn--icon,
+.v-toolbar__extension > *:first-child.v-btn--icon {
+    margin-left: 6px;
+    margin-right: -6px;
+}
+
+.primary--text.v-list__tile--active {
+    border-right: solid;
+}
+
+.theme--light.v-stepper--vertical .v-stepper__content:not(:last-child) {
+    border-left: 0;
+    border-right: 1px solid rgba(0,0,0,0.12);
+}
+.v-stepper--vertical .v-stepper__content {
+    margin: -8px 36px -16px -36px;
+    padding: 16px 23px 16px 60px;
+}
+
+.v-text-field .v-input__prepend-inner{
+    padding-left: 4px;
+    padding-right: 0;
+}
+
+.v-input.v-text-field.force-ltr .v-input__prepend-inner{
+    padding-left: 0;
+    padding-right: 4px;
+}
+
+.v-chip .v-avatar {
+    margin-right: -12px;
+    margin-left: 8px;
+}
+
+@media only screen and (min-width: 600px){
+    .v-snack__content .v-btn:first-of-type {
+        margin-right: 42px;
+        margin-left: 0;
+    }
+}
+
+.v-toolbar__content > *:last-child.v-btn--icon,
+.v-toolbar__extension > *:last-child.v-btn--icon {
+    margin-right: 6px;
+    margin-left: -6px;
+}
+
+.v-toolbar__content > *:last-child.v-menu .v-menu__activator .v-btn--icon,
+.v-toolbar__extension > *:last-child.v-menu .v-menu__activator .v-btn--icon,
+.v-toolbar__content > *:last-child.v-tooltip span .v-btn--icon, .v-toolbar__extension > *:last-child.v-tooltip span .v-btn--icon {
+    margin-left: -6px;
+    margin-right: 6px;
+}
+
+.v-toolbar__content > *:first-child.v-btn--icon, .v-toolbar__extension > *:first-child.v-btn--icon {
+    margin-right: -6px;
+    margin-left: 6px;
+}
+
+.ck.ck-reset_all, .ck.ck-reset_all *{
+    text-align: right !important;
+}
+
+.ck-rounded-corners .ck.ck-editor__editable:not(.ck-editor__nested-editable),
+.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-rounded-corners {
+    border-color: var(--ck-color-base-border);
+}
+
+.ck.ck-dropdown .ck-dropdown__panel.ck-dropdown__panel_ne,
+.ck.ck-dropdown .ck-dropdown__panel.ck-dropdown__panel_se {
+    right: 0 !important;
+    left: unset !important;;
+}
+
+.ck.ck-dropdown .ck-dropdown__arrow {
+    margin-left: unset !important;
+    margin-right: var(--ck-spacing-small) !important;
+}
+
+.ck.ck-content ol,.ck.ck-content ul{
+    padding-right: 24px;
+}
+
+.v-toolbar__content > *:first-child.v-menu .v-menu__activator .v-btn--icon,
+.v-toolbar__extension > *:first-child.v-menu .v-menu__activator .v-btn--icon, .v-toolbar__content > *:first-child.v-tooltip span .v-btn--icon,
+.v-toolbar__extension > *:first-child.v-tooltip span .v-btn--icon {
+    margin-right: -6px;
+    margin-left: 6px;
+}
+
+html.dir-rtl .v-timeline--dense .v-timeline-item__dot--small {
+    right: 7px;
+    left: unset;
+}
+
+html.dir-rtl .v-timeline--dense:before {
+    right: 18px;
+    left: unset;
+}
+
+html.dir-rtl .v-alert__icon {
+    margin-right: 0;
+    margin-left: 16px;
+}
+
+html.dir-rtl .v-alert__dismissible {
+    margin-left: 0;
+    margin-right: 16px;
+}
+
+html.dir-rtl .v-icon--right {
+    margin-right: 0;
+    margin-left: 16px;
+}
+
+.application.application--is-rtl ol,
+.application.application--is-rtl ul {
+    padding-right: 24px;
+    padding-left: unset;
+}
+
+.application.application--is-rtl .apexcharts-legend-marker {
+    margin-right: unset;
+    margin-left: 3px;
+}
