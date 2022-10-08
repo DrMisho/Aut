@@ -4,8 +4,8 @@
         <!-- ======= Hero inner Start ======= -->
         <section class="hero-inner">
             <div
-                    class="hero-inner__bg hero-inner__bg_three"
-                    data-bg-image="theme/images/bg/clients.jpg"
+                class="hero-inner__bg hero-inner__bg_three"
+                data-bg-image="theme/images/bg/clients.jpg"
             >
                 <div class="container">
                     <div class="row">
@@ -47,5 +47,84 @@
             </div>
         </section>
 
+        <section class="section-bg-common pt-30 pb-40">
+            <div class="container">
+                <div class="services-key__navbar">
+                    <div class="row">
+                        <h4 class="section-software__title_small aos-item aos-init aos-animate mt-20 mb-30" data-aos="fade-up"
+                            data-aos-duration="800" data-aos-delay="500">
+                            Here is a list of latest competitions our team members participated in:
+                        </h4>
+                        <br><br>
+                        <div class="col-sm-12">
+                            <ul class="services-key__navbar_nav nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item services-key__navbar_item" role="presentation">
+                                    @if(Request::query('country') == '')
+                                        <?php $active = "active" ?>
+                                    @else
+                                        <?php $active = "" ?>
+                                    @endif
+                                    <button class="services-key__navbar_link nav-link {{ $active }}" id="all-tab" data-bs-toggle="tab"
+                                            data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">
+                                        All
+                                    </button>
+                                </li>
+                                @foreach($countries as $country)
+                                <li class="nav-item services-key__navbar_item" role="presentation">
+                                    @if(Request::query('country') == $country->id)
+                                        <?php $active = "active" ?>
+                                    @else
+                                        <?php $active = "" ?>
+                                    @endif
+                                    <a class="services-key__navbar_link nav-link {{ $active }}" id="local-tab"
+                                       type="button" role="tab" aria-selected="true"
+                                        href="http://localhost:8000/clients?country={{$country->id}}"
+                                    >
+                                        {{  $country->translate('en')->name  }}
+                                    </a>
+                                </li>
+                                @endforeach
+                            </ul>
+                            <br>
+                            <ul class="services-key__navbar_nav nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item services-key__navbar_item" role="presentation">
+                                    <button class="services-key__navbar_link nav-link active" id="all-tab" data-bs-toggle="tab"
+                                            data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">
+                                        All
+                                    </button>
+                                </li>
+                                @foreach($suites as $suite)
+                                    <li class="nav-item services-key__navbar_item" role="presentation">
+                                        <a href="http://localhost:8000/clients?suite={{ $suite->id }}" class="services-key__navbar_link nav-link"
+                                                type="button" role="tab" aria-selected="false">
+                                            {{  $suite->translate('en')->name  }}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-key__tabbar pt-50">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                                    <div class="row">
+                                        @foreach($clients as $client)
+                                            <x-client-item :client="$client">
+
+                                            </x-client-item>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 </x-layout>

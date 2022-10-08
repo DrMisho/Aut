@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\View\Components\ClientItem;
 use App\View\Components\CompetitionItem;
 use App\View\Components\ContributionItem;
 use App\View\Components\Suite;
@@ -33,6 +34,7 @@ class AppServiceProvider extends ServiceProvider
         \Blade::component('suite', Suite::class);
         \Blade::component('competition-item', CompetitionItem::class);
         \Blade::component('contribution-item', ContributionItem::class);
+        \Blade::component('client-item', ClientItem::class);
 
     }
 }

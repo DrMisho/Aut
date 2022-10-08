@@ -107,7 +107,10 @@ Route::get('/contributions', function () {
 });
 
 Route::get('/clients', function () {
+
     return view('clients.index', [
+        'countries' => \App\Models\Country::query()->has('clients')->get(),
+        'suites' => \App\Models\Suite::query()->orderBy('show_order')->get(),
         'clients' => \App\Models\Client::query()->orderBy('show_order')->get(),
         'title' => 'Clients'
     ]);

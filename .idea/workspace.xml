@@ -265,7 +265,7 @@
       <workItem from="1664862232161" duration="25072000" />
       <workItem from="1664946407283" duration="25523000" />
       <workItem from="1665032759219" duration="23337000" />
-      <workItem from="1665206184579" duration="10154000" />
+      <workItem from="1665206184579" duration="16104000" />
     </task>
     <servers />
   </component>
@@ -301,6 +301,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1663602349876" />
+    <state x="514" y="87" key="NewPhpClassDialog" timestamp="1665219122142">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="514" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1665219122142" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1664133504787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -330,9 +334,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="478" y="11" width="579" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1663657866094" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1664731997106">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="378" y="165" key="run.anything.popup" timestamp="1665220413743">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="378" y="165" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1665220413743" />
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1664731997106" />
     <state x="411" y="144" width="672" height="600" key="search.everywhere.popup" timestamp="1665214109275">
       <screen x="0" y="0" width="1366" height="728" />

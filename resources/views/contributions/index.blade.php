@@ -69,21 +69,6 @@
                             </h2>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="section-button mb-50">
-                            <a href="case-01.html" class="btn btn--common btn--primary rt-button-animation-out wow fadeInRight"
-                               data-wow-delay=".9s" data-wow-duration=".7s">
-                                See More
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px"
-                                     height="16px" viewBox="0 0 34.53 16" xml:space="preserve">
-                                  <rect class="rt-button-line" y="7.6" width="34" height=".4"></rect>
-                                                    <g class="rt-button-cap-fake">
-                                                        <path class="rt-button-cap" d="M25.83.7l.7-.7,8,8-.7.71Zm0,14.6,8-8,.71.71-8,8Z"></path>
-                                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="container-fluid">
