@@ -1,0 +1,5 @@
+{
+    "supportedLocales": {
+        {{languagesByKey}}
+    }
+}

@@ -1,0 +1,18 @@
+<?php
+
+namespace {{namespace}}\FileUploader;
+
+use Aut\FileUpload\{{type}}Uploader;
+
+class {{className}}Uploader extends {{type}}Uploader
+{
+    public function relationName()
+    {
+        return '{{relation}}';
+    }
+
+    public function folderName()
+    {
+        return '{{folderName}}';
+    }
+}

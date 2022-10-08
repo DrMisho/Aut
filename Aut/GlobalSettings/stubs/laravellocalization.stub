@@ -1,0 +1,18 @@
+<?php
+
+return [
+    'supportedLocales' => [{{languagesByKey}}],
+
+    'useAcceptLanguageHeader' => true,
+
+    'hideDefaultLocaleInURL' => true,
+
+    'localesOrder' => [{{locales}}],
+
+    'localesMapping' => [],
+
+    'utf8suffix' => env('LARAVELLOCALIZATION_UTF8SUFFIX', '.UTF-8'),
+
+    'urlsIgnored' => ['/skipped'],
+
+];

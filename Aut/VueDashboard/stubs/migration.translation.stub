@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class Create{{className}}TranslationsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('{{tableName}}_translations', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('{{tableName}}_id');
+            {{columns}}
+            $table->string('locale')->index();
+            $table->unique(['{{tableName}}_id','locale']);
+            $table->timestamps();
+            $table->softDeletes();
+            $table->foreign('{{tableName}}_id')->references('id')->on('{{foreignTableName}}')->onDelete('cascade');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('{{tableName}}_translations');
+    }
+}

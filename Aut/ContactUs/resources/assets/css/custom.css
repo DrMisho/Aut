@@ -1,0 +1,144 @@
+#page-title{
+    padding: 100px 0;
+    text-align: center;
+}
+
+#title{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.topmargin-sm {
+    margin-top: 30px !important;
+}
+
+.float-left{
+    float: left !important;
+}
+.float-right{
+    float: right !important;
+}
+
+.text-center {
+    text-align: center;
+}
+@media (max-width: 767px){
+    h2{
+        font-size:24px;
+    }
+}
+h2{
+    color: #444;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.curious_blue_color{
+    color: #2e8ece;
+}
+
+.portfolio-image {
+    background-color: #EEE;
+    padding: 10px 0;
+}
+
+.portfolio-item {
+    float: left;
+    padding: 0 12px 12px 0;
+}
+.portfolio-desc {
+    padding: 15px 5px 10px;
+    line-height: 1.5;
+    margin-top: 3px;
+    color: #888;
+}
+.portfolio-desc span a {
+    color: #888;
+}
+
+.haedquarterTitle{
+    padding: 0 0 10px;
+    border-bottom: 2px solid #2e8ece;
+    font-weight: 600 !important;
+    line-height: 1.5;
+}
+.companyLogo{
+    width: 234px;
+    height: 104px;
+}
+
+.bottommargin-sm {
+    margin-bottom: 30px !important;
+}
+.t700 {
+    font-weight: 700 !important;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+.tright {
+    text-align: right !important;
+}
+.tleft {
+    text-align: left !important;
+}
+
+body {
+    line-height: 1.5;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+}
+.clear {
+    clear: both;
+    display: block;
+    font-size: 0px;
+    height: 0px;
+    line-height: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-process {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/preloader.gif) center center no-repeat #FFF;
+}
+
+.form-process {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.7);
+}
+
+label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    /*letter-spacing: 1px;*/
+    color: #555;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.form-group small{
+    color: red;
+    font-family: 'Lato', sans-serif;
+}
+
+.sendButton{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-bottom: 3px solid rgba(0,0,0,0.15);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}

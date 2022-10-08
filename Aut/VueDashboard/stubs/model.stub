@@ -1,0 +1,19 @@
+<?php
+
+namespace {{namespace}}\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Astrotomic\Translatable\Translatable;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use {{namespace}}\Models\Translations\{{className}}Translation;{{namespaces}}
+
+class {{className}} extends Model
+{
+    use SoftDeletes, Translatable{{trait}};
+
+    public $translationModel = {{className}}Translation::class;
+
+    public $translatedAttributes = [{{transColumns}}];
+
+    protected $fillable = [{{columns}}];{{appends}}{{casts}}{{timestamp}}{{uploader}}{{methods}}
+}
