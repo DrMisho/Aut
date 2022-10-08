@@ -1,4 +1,5 @@
 <!-- ======= About Start ======= -->
+
 <section class="about about--area about--padding section-bg-common">
     <div class="container">
         <div class="row align-items-center">

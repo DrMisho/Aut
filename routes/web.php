@@ -80,6 +80,7 @@ Route::get('/standards', function () {
     return view('standards.index', [
         'title' => 'Standards'
     ]);
+
 });
 
 Route::get('/competitions', function () {
@@ -94,4 +95,5 @@ Route::get('/benefits', function () {
     return view('benefits.index', [
         'title' => 'Benefits'
     ]);
+
 });
