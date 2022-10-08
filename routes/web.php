@@ -97,3 +97,19 @@ Route::get('/benefits', function () {
     ]);
 
 });
+
+Route::get('/contributions', function () {
+    return view('contributions.index', [
+        'contributions' => \App\Models\Contribution::query()->orderBy('contribution_date')->get(),
+        'title' => 'Contributions'
+    ]);
+
+});
+
+Route::get('/clients', function () {
+    return view('clients.index', [
+        'clients' => \App\Models\Client::query()->orderBy('show_order')->get(),
+        'title' => 'Clients'
+    ]);
+
+});

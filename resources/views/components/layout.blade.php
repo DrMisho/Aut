@@ -435,32 +435,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-1 mb-25 ml-25">
-                    <div class="footer-widget">
-                        <div class="footer-widget__title">
-                            <h3 class="footer-widget__title_heading">Company</h3>
-                        </div>
-                        <div class="footer-widget__menu">
-                            <ul>
-                                <li class="footer-widget__menu_list">
-                                    <a href="/events">Events</a>
-                                </li>
-                                <li class="footer-widget__menu_list">
-                                    <a href="/competitions">Competitions</a>
-                                </li>
-                                <li class="footer-widget__menu_list">
-                                    <a href="/contributions">Contributions</a>
-                                </li>
-                                <li class="footer-widget__menu_list">
-                                    <a href="/benefits">Benefits</a>
-                                </li>
-                                <li class="footer-widget__menu_list">
-                                    <a href="/contact">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-lg-2 col-md-4 mb-25 ml-25">
                     <div class="footer-widget">
                         <div class="footer-widget__title">

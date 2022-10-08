@@ -223,18 +223,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Automata4\work\Automata\public\theme\images\home3" />
+      <recent name="F:\Automata4\work\Automata\resources\views\components" />
+      <recent name="F:\Automata4\work\Automata\resources\views\components\team" />
+      <recent name="F:\Automata4\work\Automata\resources\assets\theme\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work\Automata\public\theme\images\slider" />
       <recent name="D:\work\Automata\public\theme\images\bg" />
       <recent name="D:\work\Automata\public\theme\images\icon" />
       <recent name="D:\work\Automata\public" />
       <recent name="F:\Automata4\work\Automata\public\theme\images\bg" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Automata4\work\Automata\public\theme\images\home3" />
-      <recent name="F:\Automata4\work\Automata\resources\views\components" />
-      <recent name="F:\Automata4\work\Automata\resources\views\components\team" />
-      <recent name="F:\Automata4\work\Automata\resources\assets\theme\js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -265,7 +265,7 @@
       <workItem from="1664862232161" duration="25072000" />
       <workItem from="1664946407283" duration="25523000" />
       <workItem from="1665032759219" duration="23337000" />
-      <workItem from="1665206184579" duration="3134000" />
+      <workItem from="1665206184579" duration="10154000" />
     </task>
     <servers />
   </component>
@@ -277,6 +277,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="570" y="121" key="#Vue/0.0.1536.824@0.0.1536.824" timestamp="1663659681495" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1665212984538">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1665212984538" />
     <state x="416" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1664209304514">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -313,10 +317,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="398" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1663602289313" />
-    <state x="330" y="0" width="794" height="824" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1664954114124">
+    <state x="330" y="0" width="794" height="824" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1665215207521">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="330" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1664954114124" />
+    <state x="330" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1665215207521" />
     <state x="371" y="0" width="794" height="824" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1664615620956" />
     <state x="369" y="42" width="1173" height="810" key="dock-window-1" timestamp="1664258842009">
       <screen x="0" y="0" width="1536" height="824" />
@@ -330,10 +334,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1664731997106" />
-    <state x="411" y="144" width="672" height="600" key="search.everywhere.popup" timestamp="1665210164795">
+    <state x="411" y="144" width="672" height="600" key="search.everywhere.popup" timestamp="1665214109275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="411" y="144" width="672" height="600" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1665210164795" />
+    <state x="411" y="144" width="672" height="600" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1665214109275" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1664731504497" />
   </component>
   <component name="XDebuggerManager">
