@@ -219,6 +219,196 @@
                                 <div class="inner wow fadeInRight text-end" data-wow-delay=".6s" data-wow-duration=".8s">
                                     <img src="/theme/images/bg/hl7.png" alt="database" class="ml-30" style="width: 75%; height: 75%;" />
                                 </div>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-30 pb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6">
+                            <h1 class="section-heading__title_big mb-30 text-center">World Health Organization (<span class="text-primary">WHO</span>)</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 mb-30">
+                            <div class="section-software p-0 mb-20">
+                                <h4 class="section-software__title_small aos-item aos-init aos-animate mt-20 text-center" data-aos="fade-up"
+                                    data-aos-duration="800" data-aos-delay="500">
+                                    World Health Organization goal is to build a better, healthier future for people all over the world and
+                                    they have created a disease standard called ICD which Automata4 has already implemented.
+                                </h4>
+                                <br><br>
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Acronym</th>
+                                        <th scope="col">Full name</th>
+                                        <th scope="col">Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">ICD</th>
+                                        <td>International Code of Disease</td>
+                                        <td>A standard diagnostic tool for epidemiology, health management and clinical purposes.</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 mb-30">
+                            <div class="">
+                                <div class="inner wow fadeInRight text-center" data-wow-delay=".6s" data-wow-duration=".8s">
+                                    <img src="/theme/images/bg/ICD.png" alt="database" class="ml-30" style="width: 50%; height: 50%;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-bg-common pt-30 pb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6">
+                            <h1 class="section-heading__title_big mb-30 text-end">American Medical Association (<span class="text-primary">AMA</span>)</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 mb-30">
+                            <div class="">
+                                <div class="inner wow fadeInRight text-start" data-wow-delay=".6s" data-wow-duration=".8s">
+                                    <img src="/theme/images/bg/AMA.png" alt="database" class="ml-30 mt-50" style="width: 75%; height: 75%;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6 mb-30">
+                            <div class="section-software p-0 mb-20">
+                                <h4 class="section-software__title_small aos-item aos-init aos-animate mt-20" data-aos="fade-up"
+                                    data-aos-duration="800" data-aos-delay="500">
+                                    AMA is working to enhance the delivery of care and enable physicians and health teams to partner with
+                                    patients to achieve better health and they have created
+                                    multiple standards to help achieving their vision which Automata4 implements.
+                                </h4>
+                                <br><br>
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Acronym</th>
+                                        <th scope="col">Full name</th>
+                                        <th scope="col">Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">CPT</th>
+                                        <td>Current Procedure Terminology</td>
+                                        <td>A medical code set that is used to report medical, surgical, and diagnostic procedures and services to entities such as physicians, health insurance companies and accreditation organizations.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">HCPCS</th>
+                                        <td>Health Care Common Procedure Coding System</td>
+                                        <td>A set of health care procedure codes based on the American Medical Association's Current Procedural Terminology (CPT).</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-30 pb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6">
+                            <h1 class="section-heading__title_big mb-30 text-center">Logical Observation Identifier Names and Codes Committee (<span class="text-primary">LOINC</span>)</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 mb-30">
+                            <div class="section-software p-0 mb-20">
+                                <h4 class="section-software__title_small aos-item aos-init aos-animate mt-20 text-center" data-aos="fade-up"
+                                    data-aos-duration="800" data-aos-delay="500">
+                                    LOINC Committee developed a common terminology which provides universal codes and names that
+                                    provide the global lingua franca for
+                                    identifying tests and observations which called LOINC and Automata4 Group has already implemented it.
+                                </h4>
+                                <br><br>
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Acronym</th>
+                                        <th scope="col">Full name</th>
+                                        <th scope="col">Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">LOINC</th>
+                                        <td>Logical Observation Identifier Names and Codes</td>
+                                        <td>The international standard for identifying health measurements, observations, and documents.</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-bg-common pt-30 pb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6">
+                            <h1 class="section-heading__title_big mb-30">Automata4 Group</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6 mb-30">
+                            <div class="section-software p-0 mb-20">
+                                <h4 class="section-software__title_small aos-item aos-init aos-animate mt-20" data-aos="fade-up"
+                                    data-aos-duration="800" data-aos-delay="500">
+                                    Medicana Team "in search for excellency" has found a standard that will handle all
+                                    of the national and international drug standards which called Drugtionary.
+                                </h4>
+                                <br><br>
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Acronym</th>
+                                        <th scope="col">Full name</th>
+                                        <th scope="col">Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">Drugtionary</th>
+                                        <td>International Drugs Codes</td>
+                                        <td>A database for identifying international drug standards and their drugs.</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6 mb-30">
+                            <div class="">
+                                <div class="inner wow fadeInRight text-end" data-wow-delay=".6s" data-wow-duration=".8s">
+                                    <img src="/theme/images/bg/automata4_logo.png" alt="database" class="ml-30" style="width: 75%; height: 75%;" />
+                                </div>
+                                <br><br>
                             </div>
                         </div>
                     </div>

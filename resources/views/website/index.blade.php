@@ -50,7 +50,6 @@
                                     and holding true to current and effective web practices, Automata4's web design and development solutions
                                     are customized to meet your needs.
 
-                                    {{$title}}
                                 </span>
                             </div>
                         </div>
@@ -297,3 +296,4 @@
 
 
 </x-layout>
+

@@ -22595,7 +22595,7 @@ header.sticky-on.sticky .navbar-wrap {
   padding: 15px 15px;
   border-radius: 5px;
   margin: 0 30px;
-  margin-top: -40px;
+  margin-top: -20px;
   position: relative;
   z-index: 1;
   -o-transition: all 0.4s ease;

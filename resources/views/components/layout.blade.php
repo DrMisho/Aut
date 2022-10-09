@@ -119,6 +119,11 @@
                                         <i class="fab fa-linkedin-in"></i>
                                     </a>
                                 </li>
+                                <li class="header-top__social_list">
+                                    <a class="header-top__social_list--link linkedin" href="https://wa.me/963934450000">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -131,7 +136,7 @@
                 <div class="header-bottom__col">
                     <div class="logo">
                         <a href="/" class="logo__link">
-                            <img src="/theme/images/logo.png" alt="IT Solution Techkit" />
+                            <img src="/theme/images/logoo.png" alt="IT Solution Techkit" />
                         </a>
                     </div>
                 </div>
@@ -200,6 +205,9 @@
                                     <a class="animation" href="/contact">Contact</a>
                                 </li>
                                 <li class="list">
+                                    <a class="animation" href="/contact">العربية</a>
+                                </li>
+                                <li class="list">
                                     <div class="search search--circle">
                                         <a href="#template-search"><i class="fas fa-search"></i></a>
                                     </div>
@@ -216,7 +224,7 @@
 <div class="rt-header-menu mean-container position-relative" id="meanmenu">
     <div class="mean-bar">
         <a href="index.html">
-            <img class="logo-small" alt="Techkit" src="/theme/images/logo.png" />
+            <img class="logo-small" alt="Techkit" src="/theme/images/logoo.png" />
         </a>
         <form class="header-bottom__col">
             <div class="header-search">
@@ -321,7 +329,7 @@
                 <div class="col-lg-3 col-md-6 mb-30">
                     <div class="footer-widget">
                         <div class="footer-widget__log mb-30">
-                            <a href="index.html"><img src="/theme/images/Automata4-Group.png" alt="" /></a>
+                            <img src="/theme/images/Automata4-Group.png" alt="" />
                         </div>
                         <div class="footer-widget__text">
                             <p class="footer-widget__text_paragraph">
@@ -344,6 +352,37 @@
                                     <a class="footer-widget__social_list--link linkedin" href="https://www.linkedin.com/company/automata4-group/">
                                         <i class="fab fa-linkedin-in"></i>
                                     </a>
+                                </li>
+                                <li class="footer-widget__social_list">
+                                    <a class="footer-widget__social_list--link" href="https://wa.me/963934450000">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-1 mb-25 ml-25">
+                    <div class="footer-widget">
+                        <div class="footer-widget__title">
+                            <h3 class="footer-widget__title_heading">Company</h3>
+                        </div>
+                        <div class="footer-widget__menu">
+                            <ul>
+                                <li class="footer-widget__menu_list">
+                                    <a href="/events">Events</a>
+                                </li>
+                                <li class="footer-widget__menu_list">
+                                    <a href="/competitions">Competitions</a>
+                                </li>
+                                <li class="footer-widget__menu_list">
+                                    <a href="/contributions">Contributions</a>
+                                </li>
+                                <li class="footer-widget__menu_list">
+                                    <a href="/benefits">Benefits</a>
+                                </li>
+                                <li class="footer-widget__menu_list">
+                                    <a href="/contact">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -391,32 +430,6 @@
                                 </li>
                                 <li class="footer-widget__menu_list">
                                     <a href="/standards">Standards</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-1 mb-25 ml-25">
-                    <div class="footer-widget">
-                        <div class="footer-widget__title">
-                            <h3 class="footer-widget__title_heading">Company</h3>
-                        </div>
-                        <div class="footer-widget__menu">
-                            <ul>
-                                <li class="footer-widget__menu_list">
-                                    <a href="/events">Events</a>
-                                </li>
-                                <li class="footer-widget__menu_list">
-                                    <a href="/competitions">Competitions</a>
-                                </li>
-                                <li class="footer-widget__menu_list">
-                                    <a href="/contributions">Contributions</a>
-                                </li>
-                                <li class="footer-widget__menu_list">
-                                    <a href="/benefits">Benefits</a>
-                                </li>
-                                <li class="footer-widget__menu_list">
-                                    <a href="/contact">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -497,6 +510,7 @@
 <!-- ======= jQuery Library ======= -->
 <script src="/theme/js/jquery.min.js"></script>
 <script src="/theme/dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
 
 <script src="/theme/dependencies/slick/slick.min.js"></script>
 <script src="/theme/dependencies/animation/wow.min.js"></script>
@@ -516,6 +530,36 @@
 <script src="/theme/dependencies/hoverdir/jquery.hoverdir.js"></script>
 <!-- ======= Main JS ======= -->
 <script src="/theme/js/main.js"></script>
+
+<script>
+    let filterCountry = '*';
+    let filterSuite = '*';
+
+    var $grid = $('#portfolio-items').isotope({
+        itemSelector: '.single-portfolio',
+        layoutMode: 'fitRows'
+    });
+
+    $('#filtersCountry').on( 'click', 'li', function() {
+        filterCountry = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterCountry+filterSuite});
+
+    });
+    $('#filtersSuite').on( 'click', 'li', function() {
+        filterSuite = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterCountry+filterSuite });
+    });
+
+    $('#filtersCountry li').on( 'click', 'button', function() {
+        $('#filtersCountry li button').removeClass('active');
+        $(this).addClass("active");
+    })
+    $('#filtersSuite li').on( 'click', 'button', function() {
+        $('#filtersSuite li button').removeClass('active');
+        $(this).addClass("active");
+    })
+
+</script>
 
 <!-- ======= Custom JS ======= -->
 <script src="/theme/js/custom.js"></script>

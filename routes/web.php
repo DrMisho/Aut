@@ -80,4 +80,65 @@ Route::get('/standards', function () {
     return view('standards.index', [
         'title' => 'Standards'
     ]);
+
 });
+
+Route::get('/competitions', function () {
+    //dd(\App\Models\Competition::query()->orderBy('show_order')->with(['city', 'team'])->get());
+    return view('competitions.index', [
+        'competitions' => \App\Models\Competition::query()->orderBy('show_order')->with(['city', 'team'])->get(),
+        'title' => 'Competitions'
+    ]);
+});
+
+Route::get('/benefits', function () {
+    return view('benefits.index', [
+        'title' => 'Benefits'
+    ]);
+
+});
+
+Route::get('/contributions', function () {
+    return view('contributions.index', [
+        'contributions' => \App\Models\Contribution::query()->orderBy('contribution_date')->get(),
+        'title' => 'Contributions'
+    ]);
+
+});
+
+Route::get('/clients', function () {
+
+    return view('clients.index', [
+        'countries' => \App\Models\Country::query()->has('clients')->get(),
+        'suites' => \App\Models\Suite::query()->orderBy('show_order')->get(),
+        'clients' => \App\Models\Client::query()->orderBy('show_order')->get(),
+        'title' => 'Clients'
+    ]);
+
+});
+
+Route::get('/news', function () {
+
+    return view('news.index', [
+        'news' => \App\Models\News::query()->orderBy('publish_at')->with('city')->paginate(10),
+        'title' => 'News'
+    ]);
+
+});
+
+Route::get('/news/{news}', function (\App\Models\News $news) {
+
+    return view('news.show', [
+        'news' => $news,
+        'title' => $news->translate('en')->title
+    ]);
+
+});
+
+Route::get('/contact', function () {
+    return view('contact.index', [
+        'branches' => \App\Models\Branch::all(),
+        'title' => 'Contact'
+    ]);
+});
+

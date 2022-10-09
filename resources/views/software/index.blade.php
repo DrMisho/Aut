@@ -49,8 +49,8 @@
                 <div class="row">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 mb-30">
-                            <div class="section-software p-0 mb-20">
-                                <h4 class="section-software__title_small aos-item aos-init aos-animate mt-20" data-aos="fade-up"
+                            <div class="about-software__content about-agency__content p-0 mb-20 mt-60">
+                                <span class="title title--small aos-item aos-init aos-animate mt-20" data-aos="fade-up"
                                     data-aos-duration="800" data-aos-delay="500">
                                     Automata4 Group is a leading provider of software and services to many clients in Syria and the Middle East.
                                     We acquire, manage and build industry specific software businesses which provide specialized, mission-critical
@@ -58,7 +58,7 @@
                                     solutions that enable our customers to achieve their objectives. With a proven track record of solid growth,
                                     we're establishing a
                                     broad portfolio of software businesses to provide our customers and shareholders with exceptional returns.
-                                </h4>
+                                </span>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 mb-30">
@@ -94,13 +94,13 @@
                         <div class="col-lg-6 col-md-6 mb-30">
                             <div class="">
                                 <div class="inner wow fadeInRight text-start" data-wow-delay=".6s" data-wow-duration=".8s">
-                                    <img src="/theme/images/bg/cmmi.png" alt="database" class="ml-30 mt-80" style="width: 75%; height: 75%;" />
+                                    <img src="/theme/images/bg/cmmi.png" alt="database" class="ml-30 mt-60" style="width: 75%; height: 75%;" />
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 mb-30">
-                            <div class="section-software p-0 mb-20">
-                                <h4 class="section-software__title_small aos-item aos-init aos-animate" data-aos="fade-up"
+                            <div class="about-software__content about-agency__content p-0 mb-20">
+                                <h4 class="title title--small aos-item aos-init aos-animate" data-aos="fade-up"
                                     data-aos-duration="800" data-aos-delay="500">
                                     CMMI is a process improvement approach that provides organizations with the essential elements of effective processes, which will improve their performance. CMMI-based process improvement includes identifying your organization’s process strengths and weaknesses and making process changes to turn weaknesses into strengths.
                                     <br><br>
