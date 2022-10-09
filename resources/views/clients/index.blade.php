@@ -56,8 +56,8 @@
                             Here is a list of latest competitions our team members participated in:
                         </h4>
                         <br><br>
-                        <div class="col-sm-12 portfolio-menu" id="filters">
-                            <ul class="services-key__navbar_nav nav nav-tabs" id="myTab" role="tablist">
+                        <div class="col-sm-12 portfolio-menu" >
+                            <ul class="services-key__navbar_nav nav nav-tabs" id="filtersCountry" role="tablist">
                                 <li data-filter="*" class="nav-item services-key__navbar_item" role="presentation">
                                     <button class="services-key__navbar_link nav-link active" id="all-tab" data-bs-toggle="tab"
                                             data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">
@@ -66,16 +66,16 @@
                                 </li>
                                 @foreach($countries as $country)
                                 <li data-filter=".{{ $country->country_code_3 }}" class="nav-item services-key__navbar_item" role="presentation">
-                                    <a class="services-key__navbar_link nav-link" id="local-tab"
+                                    <button class="services-key__navbar_link nav-link" id="local-tab"
                                        type="button" role="tab" aria-selected="true"
                                     >
                                         {{  $country->translate('en')->name  }}
-                                    </a>
+                                    </button>
                                 </li>
                                 @endforeach
                             </ul>
                             <br>
-                            <ul class="services-key__navbar_nav nav nav-tabs" id="myTab" role="tablist">
+                            <ul class="services-key__navbar_nav nav nav-tabs" id="filtersSuite" role="tablist">
                                 <li data-filter="*" class="nav-item services-key__navbar_item" role="presentation">
                                     <button class="services-key__navbar_link nav-link active" id="all-tab" data-bs-toggle="tab"
                                             data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">
@@ -84,10 +84,10 @@
                                 </li>
                                 @foreach($suites as $suite)
                                     <li data-filter=".{{ $suite->suite_code }}" class="nav-item services-key__navbar_item" role="presentation">
-                                        <a  class="services-key__navbar_link nav-link"
+                                        <button  class="services-key__navbar_link nav-link"
                                                 type="button" role="tab" aria-selected="false">
                                             {{  $suite->translate('en')->name  }}
-                                        </a>
+                                        </button>
                                     </li>
                                 @endforeach
                             </ul>

@@ -532,20 +532,33 @@
 <script src="/theme/js/main.js"></script>
 
 <script>
+    let filterCountry = '*';
+    let filterSuite = '*';
+
     var $grid = $('#portfolio-items').isotope({
         itemSelector: '.single-portfolio',
         layoutMode: 'fitRows'
     });
 
-    $('#filters ul').on( 'click', 'li', function() {
-        let filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
+    $('#filtersCountry').on( 'click', 'li', function() {
+        filterCountry = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterCountry+filterSuite});
+
+    });
+    $('#filtersSuite').on( 'click', 'li', function() {
+        filterSuite = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterCountry+filterSuite });
     });
 
-    $('#filters ul').on( 'click', 'li', function() {
-        $(this).siblings(".active").removeClass('active');
+    $('#filtersCountry li').on( 'click', 'button', function() {
+        $('#filtersCountry li button').removeClass('active');
         $(this).addClass("active");
     })
+    $('#filtersSuite li').on( 'click', 'button', function() {
+        $('#filtersSuite li button').removeClass('active');
+        $(this).addClass("active");
+    })
+
 </script>
 
 <!-- ======= Custom JS ======= -->

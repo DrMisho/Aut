@@ -125,3 +125,20 @@ Route::get('/news', function () {
     ]);
 
 });
+
+Route::get('/news/{news}', function (\App\Models\News $news) {
+
+    return view('news.show', [
+        'news' => $news,
+        'title' => $news->translate('en')->title
+    ]);
+
+});
+
+Route::get('/contact', function () {
+    return view('contact.index', [
+        'branches' => \App\Models\Branch::all(),
+        'title' => 'Contact'
+    ]);
+});
+

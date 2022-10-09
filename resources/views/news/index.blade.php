@@ -40,7 +40,7 @@
                         <div class="blog-item blog-item--software">
                             <header class="blog-item__header header">
                                 <a
-                                        href="javascript:void(0);"
+                                        href="/news/{{$new->id}}"
                                         class="blog-item__img_link link link--image"
                                 >
                                     <img
@@ -64,7 +64,7 @@
                             </header>
                             <article class="blog-item__article content">
                                 <h3 class="blog-item__title">
-                                    <a href="blog-details.html">
+                                    <a href="/news/{{$new->id}}">
                                         {{ $new->translate('en')->title }}
                                     </a>
                                 </h3>
