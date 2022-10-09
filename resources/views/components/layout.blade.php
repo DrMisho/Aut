@@ -510,6 +510,7 @@
 <!-- ======= jQuery Library ======= -->
 <script src="/theme/js/jquery.min.js"></script>
 <script src="/theme/dependencies/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
 
 <script src="/theme/dependencies/slick/slick.min.js"></script>
 <script src="/theme/dependencies/animation/wow.min.js"></script>
@@ -529,6 +530,23 @@
 <script src="/theme/dependencies/hoverdir/jquery.hoverdir.js"></script>
 <!-- ======= Main JS ======= -->
 <script src="/theme/js/main.js"></script>
+
+<script>
+    var $grid = $('#portfolio-items').isotope({
+        itemSelector: '.single-portfolio',
+        layoutMode: 'fitRows'
+    });
+
+    $('#filters ul').on( 'click', 'li', function() {
+        let filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
+
+    $('#filters ul').on( 'click', 'li', function() {
+        $(this).siblings(".active").removeClass('active');
+        $(this).addClass("active");
+    })
+</script>
 
 <!-- ======= Custom JS ======= -->
 <script src="/theme/js/custom.js"></script>

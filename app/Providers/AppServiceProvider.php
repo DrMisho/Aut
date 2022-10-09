@@ -6,6 +6,7 @@ use App\View\Components\ClientItem;
 use App\View\Components\CompetitionItem;
 use App\View\Components\ContributionItem;
 use App\View\Components\Suite;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Relations\Relation;
 
@@ -31,6 +32,8 @@ class AppServiceProvider extends ServiceProvider
 //        Relation::enforceMorphMap([
 //            'news' => 'Aut\News\Models\News',
 //        ]);
+        Paginator::useBootstrap();
+
         \Blade::component('suite', Suite::class);
         \Blade::component('competition-item', CompetitionItem::class);
         \Blade::component('contribution-item', ContributionItem::class);

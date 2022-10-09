@@ -116,3 +116,12 @@ Route::get('/clients', function () {
     ]);
 
 });
+
+Route::get('/news', function () {
+
+    return view('news.index', [
+        'news' => \App\Models\News::query()->orderBy('publish_at')->with('city')->paginate(10),
+        'title' => 'News'
+    ]);
+
+});
