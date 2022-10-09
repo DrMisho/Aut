@@ -374,7 +374,7 @@
                                     <div class="timeline-circle"></div>
                                     <div class="timeline-content">
                                         <p>
-                                            {{  strip_tags($box->content)  }}
+                                            {!! $box->content !!}
                                         </p>
                                     </div>
                                 </div>

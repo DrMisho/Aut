@@ -52,7 +52,7 @@
         center: [36.20753543868315, 37.15003520734566],
         zoom: 12,
         scrollwheel: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeId: "coordinate",
         styles: [
           {
             featureType: "all",

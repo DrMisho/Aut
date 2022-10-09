@@ -142,3 +142,10 @@ Route::get('/contact', function () {
     ]);
 });
 
+Route::get('/events', function () {
+    return view('events.index', [
+        'events' => \App\Models\Event::query()->orderBy('event_date')->paginate(10),
+        'title' => 'Events'
+    ]);
+});
+

@@ -11384,8 +11384,3 @@ table.v-table thead th {
 .v-btn--floating .v-icon{
     height: unset;
 }
-
-.pagination{
-  float: right;
-  margin-top: 10px;
-}
