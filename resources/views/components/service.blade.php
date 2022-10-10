@@ -1,7 +1,5 @@
-@props(['clients'])
-
 <!-- ======= Service Key Area Start ======= -->
-<section class="services-key services-key--padding">
+<section class="services-key pt-50 pb-50">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
@@ -22,7 +20,7 @@
                         <li class="nav-item services-key__navbar_item" role="presentation">
                             <button class="services-key__navbar_link nav-link active" id="home-tab" data-bs-toggle="tab"
                                     data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-                                <i class="flaticon flaticon-settings"></i> Why Choose us
+                                <i class="flaticon flaticon-settings"></i> Our Solutions
                             </button>
                         </li>
                         <li class="nav-item services-key__navbar_item" role="presentation">
@@ -47,81 +45,29 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="row">
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                <?php $i = 0.2 ?>
+                                @foreach($suites as $suite)
+                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="{{$i}}s">
                                     <div class="services__item services-key__content mb-30">
                                         <div class="services__item_overlay services-key__content_overlay"></div>
-                                        <header class="services__item_header services-key__content_header">
-                                            <i
-                                                    class="flaticon flaticon-graphic-design services__item_icon services-key__content_icon"></i>
-                                            <h3 class="services__item_title services-key__content_title">
-                                                <a href="services-details.html">Product Design</a>
-                                            </h3>
-                                        </header>
-                                        <div class="services__item_content services-key__content_text">
-                                            <p class="services__item_paragraph services-key__content_paragraph">
-                                                Grursus mal suada lisis more ametion consectet
-                                                elit. Vesti at suada consectetur elit.
-                                            </p>
-                                            <a class="services-key__content_link" href="services-details.html">Discover now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                    <div class="services__item services-key__content mb-30">
-                                        <div class="services__item_overlay services-key__content_overlay"></div>
-                                        <header class="services__item_header services-key__content_header">
-                                            <i
-                                                    class="flaticon flaticon-web-development services__item_icon services-key__content_icon"></i>
+                                        <header class="services__item_header services-key__content_header text-center">
+                                            <div style="z-index: 3;position: relative;right: 5px;top: 5px; background: inherit">
+                                                <img class="services__tech_icon" src="/theme/images/icon/{{ $suite->suite_code }}.png" alt="{{ $suite->translate('en')->name }}">
+                                            </div>
                                             <h2 class="services__item_title services-key__content_title">
-                                                <a href="services-details.html">Web Development</a>
+                                                <a href="/suites/{{ $suite->suite_code }}">{{ $suite->translate('en')->name }}</a>
                                             </h2>
                                         </header>
                                         <div class="services__item_content services-key__content_text">
                                             <p class="services__item_paragraph services-key__content_paragraph">
-                                                Grursus mal suada lisis more ametion consectet
-                                                elit. Vesti at suada consectetur elit.
+                                                {{ $suite->translate('en')->long_name }}
                                             </p>
-                                            <a class="services-key__content_link" href="services-details.html">Discover now</a>
+                                            <a class="services-key__content_link" href="/suites/{{ $suite->suite_code }}">Discover now</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                                    <div class="services__item services-key__content mb-30">
-                                        <div class="services__item_overlay services-key__content_overlay"></div>
-                                        <header class="services__item_header services-key__content_header">
-                                            <i class="flaticon flaticon-analysis services__item_icon services-key__content_icon"></i>
-                                            <h2 class="services__item_title services-key__content_title">
-                                                <a href="services-details.html">Data Analytics</a>
-                                            </h2>
-                                        </header>
-                                        <div class="services__item_content services-key__content_text">
-                                            <p class="services__item_paragraph services-key__content_paragraph">
-                                                Grursus mal suada lisis more ametion consectet
-                                                elit. Vesti at suada consectetur elit.
-                                            </p>
-                                            <a class="services-key__content_link" href="services-details.html">Discover now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                                    <div class="services__item services-key__content mb-30">
-                                        <div class="services__item_overlay services-key__content_overlay"></div>
-                                        <header class="services__item_header services-key__content_header">
-                                            <i
-                                                    class="flaticon flaticon-cyber-security services__item_icon services-key__content_icon"></i>
-                                            <h2 class="services__item_title services-key__content_title">
-                                                <a href="services-details.html">Cyber Security</a>
-                                            </h2>
-                                        </header>
-                                        <div class="services__item_content services-key__content_text">
-                                            <p class="services__item_paragraph services-key__content_paragraph">
-                                                Grursus mal suada lisis more ametion consectet
-                                                elit. Vesti at suada consectetur elit.
-                                            </p>
-                                            <a class="services-key__content_link" href="services-details.html">Discover now</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <?php $i++ ?>
+                                @endforeach
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -172,6 +118,9 @@
                                     {{-- more partners --}}
                                     @endforeach
                                 </ul>
+                                <div class="services__item_content services-key__content_text text-center">
+                                    <a class="services-key__content_link" href="/clients">See All Clients</a>
+                                </div>
                             </div>
                         </div>
                     </div>

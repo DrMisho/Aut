@@ -19,7 +19,9 @@
 
         <x-about/>
 
-        <x-service :clients="$clients"/>
+        <x-box/>
+
+        <x-service :clients="$clients" :suites="$suites"/>
 
 
     </main>

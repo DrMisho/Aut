@@ -38,29 +38,27 @@
             <!-- ======= Hero inner End ======= -->
 
             <!-- ======= Team Area Start ======= -->
-            <section class="team pt-120 pb-90">
+            <section class="team pt-50 pb-50">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-10 offset-lg-1">
-                            <div class="section-heading text-center mb-70">
-                              <span class="section-heading__title_small">
-                                {{  strip_tags($page->translate('en')->subtitle) }}
-                              </span>
-                                <h2 class="section-heading__title_big">
-                                {{  strip_tags($page->translate('en')->content)  }}
-                                </h2>
-                            </div>
+                        <div class="col-lg-12 col-md-6 text-center">
+                            <h1 class="section-heading__title_big mb-30"><span class="text-primary">PEOPLE…PEOPLE….AND PEOPLE</span></h1>
+                            <span class="title aos-item aos-init aos-animate p" style="font-size: 23px;">
+                            Our people are the basis of our success as they have the passion always to meet the efficient measures of success
+                        </span>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team pt-60 pb-30">
+                <div class="container">
+                    <div class="row">
                         @foreach($teams as $team)
-{{--                            @foreach($team->socialNetworks as $social)--}}
-{{--                            {{  $social->translate('en')->name  }}--}}
-{{--                            @endforeach--}}
-                        <x-team_member
-                                src="{{  $team->image_path  }}"
-                                position="{{ $team->jobTitle->translate('en')->name }}"
-                                name="{{  $team->translate('en')->name  }}"
-                                :socialNetworks="$team->socialNetworks"
-                        />
+                        <x-team-member
+                                :team="$team"
+                        >
+                        </x-team-member>
 
                         @endforeach
                     </div>
@@ -68,32 +66,10 @@
             </section>
             <!-- ======= Team Area End ======= -->
 
-            <x-good_at/>
+            <x-good-at/>
 
             <!-- ======= Contact Area Start ======= -->
-            <section
-                    class="contact contact--agency"
-                    data-bg-image="theme/images/bg/contact-bg.jpg"
-            >
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-3">
-                            <div class="contact__agency">
-                    <span class="title text-white"
-                    >We are here to answer your questions 24/7</span
-                    >
-                                <h2 class="heading text-white">NEED A CONSULTATION?</h2>
-                                <a
-                                        href="contact.html"
-                                        class="btn btn--common btn--default btn--primary"
-                                >
-                                    Contact Us
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <x-contact-us/>
             <!-- ======= Contact Area End ======= -->
         </main>
         <!-- ======= Main Wrapper End ======= -->

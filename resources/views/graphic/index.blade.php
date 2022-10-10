@@ -32,14 +32,12 @@
             </div>
         </section>
         <!-- ======= Hero inner End ======= -->
-        <section class="team pt-120 pb-90">
+        <section class="team pt-60 pb-90">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <div class="section-heading text-center mb-20">
-                              <span class="section-heading__title_small">
-                                    MAKE LIFE….BEAUTIFUL
-                              </span>
+                            <h1 class="section-heading__title_big"><span class="text-primary">MAKE LIFE….BEAUTIFUL</span></h1>
                             <br><br>
                             <div class="text-start">
                                 <span class="title aos-item aos-init aos-animate p" style="font-size: 23px;">

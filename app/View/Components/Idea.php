@@ -4,22 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Suite extends Component
+class Idea extends Component
 {
-
-    public $suites;
-    public $liClass;
-    public $ulClass;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($liClass, $ulClass)
+    public function __construct()
     {
-        $this->liClass = $liClass;
-        $this->ulClass = $ulClass;
-        $this->suites = \App\Models\Suite::all();
+        //
     }
 
     /**
@@ -29,6 +23,6 @@ class Suite extends Component
      */
     public function render()
     {
-        return view('components.suite');
+        return view('components.idea');
     }
 }

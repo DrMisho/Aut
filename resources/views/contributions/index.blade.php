@@ -84,7 +84,7 @@
             </div>
         </section>
         <!-- ======= Case Studies Area End ======= -->
-        <div id="example1"></div>
+
     </main>
 
 </x-layout>

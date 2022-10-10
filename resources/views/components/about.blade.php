@@ -1,12 +1,13 @@
 <!-- ======= About Start ======= -->
 
-<section class="about about--area about--padding section-bg-common">
+<section class="about about--area pt-50 pb-50 section-bg-common">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5 mb-30">
                 <div class="section-heading mb-40">
-              <span class="section-heading__title_small wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".4s">About
-                Company</span>
+                  <span class="section-heading__title_small wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".4s">About
+                    Company
+                  </span>
                     <h2 class="section-heading__title_big wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".5s">
                         What We Promise High Quality IT Solutions
                     </h2>

@@ -1,4 +1,4 @@
-<section class="about pt-125 pb-100">
+<section class="about pt-60 pb-100">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
@@ -112,7 +112,7 @@
                             >
                                 <span>90%</span>
                             </div>
-                       </div>
+                        </div>
                     </div>
                     <div class="overflow-hidden item">
                         <div class="progress">

@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function (\Illuminate\Http\Request $request) {
     return view('index', [
         'title' => 'Home Page',
-        'clients' => \App\Models\Client::query()->orderBy('show_order')->get()
+        'clients' => \App\Models\Client::query()->orderBy('show_order')->get(),
+        'suites' => \App\Models\Suite::query()->orderBy('show_order')->get()
     ]);
 })->name('home');
 
@@ -138,9 +139,11 @@ Route::get('/news/{news}', function (\App\Models\News $news) {
 Route::get('/contact', function () {
     return view('contact.index', [
         'branches' => \App\Models\Branch::all(),
+        'countries' => \App\Models\Country::all(),
+        'job_titles' => \Aut\GlobalSettings\Models\JobTitle::all(),
         'title' => 'Contact'
     ]);
-});
+})->middleware('cors');
 
 Route::get('/events', function () {
     return view('events.index', [

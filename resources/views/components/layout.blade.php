@@ -168,10 +168,10 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <x-suite
+                                <x-suite-list
                                         :liClass='"main-menu__nav_sub list"'
                                         :ulClass='"main-menu__dropdown"'
-                                ></x-suite>
+                                ></x-suite-list>
                                 <li class="main-menu__nav_sub list">
                                     <a class="animation" href="#">Services</a>
                                     <ul class="main-menu__dropdown">
@@ -223,7 +223,7 @@
 <!-- Mobile Menu Start -->
 <div class="rt-header-menu mean-container position-relative" id="meanmenu">
     <div class="mean-bar">
-        <a href="index.html">
+        <a href="/">
             <img class="logo-small" alt="Techkit" src="/theme/images/logoo.png" />
         </a>
         <form class="header-bottom__col">
@@ -243,7 +243,7 @@
             <nav class="menu-main-primary-container">
                 <ul class="menu">
                     <li class="list menu-item-parent menu-item-has-children">
-                        <a class="animation" href="index.html">Company</a>
+                        <a class="animation" href="/">Company</a>
                         <ul class="main-menu__dropdown sub-menu">
                             <li><a href="/about">About Us</a></li>
                             <li>
@@ -264,10 +264,10 @@
                             </li>
                         </ul>
                     </li>
-                    <x-suite
+                    <x-suite-list
                             :liClass='"list menu-item-parent menu-item-has-children"'
                             :ulClass='"main-menu__dropdown sub-menu"'
-                    ></x-suite>
+                    ></x-suite-list>
                     <li class="list menu-item-parent menu-item-has-children">
                         <a class="animation" href="#">Services</a>
                         <ul class="main-menu__dropdown sub-menu">
@@ -518,7 +518,7 @@
 <script src="/theme/dependencies/greensock/TweenMax.min.js"></script>
 <script src="/theme/dependencies/counter-up/jquery.counterup.min.js"></script>
 <script src="/theme/dependencies/waypoints/jquery.waypoints.min.js"></script>
-<script src="/theme/dependencies/niceselect/jquery.nice-select.min.js"></script>
+{{--<script src="/theme/dependencies/niceselect/jquery.nice-select.min.js"></script>--}}
 <script src="/theme/dependencies/anime/anime.min.js"></script>
 <script src="/theme/dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
 <script src="/theme/dependencies/tilt/vanilla-tilt.min.js"></script>
@@ -528,6 +528,8 @@
 <script src="/theme/dependencies/isotope/imagesloaded.pkgd.min.js"></script>
 <script src="/theme/js/modernizr-3.5.0.min.js"></script>
 <script src="/theme/dependencies/hoverdir/jquery.hoverdir.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABPIJkYFCSW_1q2toMCQQviExc7y1ucrQ&language=en"></script>
+<script type="text/javascript" src="/theme/dependencies/gmap3.min.js"></script>
 <!-- ======= Main JS ======= -->
 <script src="/theme/js/main.js"></script>
 
@@ -560,6 +562,7 @@
     })
 
 </script>
+
 
 <!-- ======= Custom JS ======= -->
 <script src="/theme/js/custom.js"></script>
