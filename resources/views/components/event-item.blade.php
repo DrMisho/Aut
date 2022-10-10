@@ -1,7 +1,7 @@
 <div class="col-lg-4 col-md-6 mb-30 wow fadeInUp" data-wow-delay=".4s">
     <div class="case-choose">
         <div class="case-choose__thumb image">
-            <a href="case-details.html">
+            <a href="/events/{{ $event->id }}">
                 <img
                         src="/theme/images/case/feature-chose-thub-1.jpg"
                         alt="Case Details"
@@ -12,7 +12,7 @@
         </div>
         <div class="case-choose__content">
             <h3 class="heading">
-                <a href="services-details-02.html"
+                <a href="/events/{{ $event->id }}"
                 >{!! $event->translate('en')->title !!}</a>
             </h3>
             <p class="paragraph">
@@ -20,7 +20,7 @@
             </p>
             <span>{!! $event->city->translate('en')->name !!} | {!! $event->translate('en')->location !!}</span>
             <br>
-            <a class="link" href="services-details.html"
+            <a class="link" href="/events/{{ $event->id }}"
             >View Event</a>
         </div>
     </div>

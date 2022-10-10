@@ -152,3 +152,6 @@ Route::get('/events', function () {
     ]);
 });
 
+Route::get('/events/{event}', function(\App\Models\Event $event) {
+    return $event;
+});

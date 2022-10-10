@@ -33,11 +33,11 @@
             <div class="container">
                 <div class="row pb-100">
                     <div class="col-lg-12 col-md-6 text-center">
-                        <h1 class="section-heading__title_big mb-30">STATE OF THE <span class="text-primary">ART...</span> AT YOUR <span class="text-primary">FINGERPRINT</span></h1>
+                        <h1 class="section-heading__title_big">STATE OF THE <span class="text-primary">ART...</span> AT YOUR <span class="text-primary">FINGERPRINT</span></h1>
                     </div>
                 </div>
                 <div class="row pb-100">
-                    <div class="col-lg-6 col-md-6 pt-40">
+                    <div class="col-lg-6 col-md-6">
                         <div class="about-agency__right m-0">
                             <div class="about-software__content about-agency__content">
                                 <span class="title title--small aos-item aos-init aos-animate" data-aos="fade-up"
@@ -85,7 +85,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="row pt-75 pb-20">
-                            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                            <div class="col-lg-8 col-md-6">
                                 <div class="section-software text-center mb-50">
                                     <h2 class="section-software__title_big">
                                         <span class="text-primary">ABILITY</span>
@@ -95,7 +95,7 @@
                         </div>
                         <div class="row">
 
-                            <div class="col-lg-6 col-md-6 mb-30 ml-60">
+                            <div class="col-lg-6 col-md-6 mb-30 ml-20">
                                 <div class="section-software p-0 mb-20">
                                     <h4 class="section-software__title_small aos-item aos-init aos-animate" data-aos="fade-up"
                                         data-aos-duration="800" data-aos-delay="500">
@@ -130,7 +130,7 @@
             <section class="">
                 <div class="container">
                     <div class="row pb-30 pt-40">
-                        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                        <div class="col-lg-12 col-md-6">
                             <div class="section-software text-center">
                             <span class="section-software__title_small">
                                 OUR DATABASE EXPERIENCE
@@ -159,7 +159,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="row pt-75 pb-20">
-                            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                            <div class="col-lg-8 col-md-6">
                                 <div class="section-software text-center mb-50">
                                     <h2 class="section-software__title_big">
                                         <span class="text-primary">Define, Design, </span>AND <span class="text-primary">Build a Data Enterprise</span>
@@ -175,7 +175,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 mb-30 ml-60">
+                            <div class="col-lg-6 col-md-6 mb-30 ml-20">
                                 <div class="section-software p-0 mb-20">
                                     <h4 class="section-software__title_small aos-item aos-init aos-animate" data-aos="fade-up"
                                         data-aos-duration="800" data-aos-delay="500">

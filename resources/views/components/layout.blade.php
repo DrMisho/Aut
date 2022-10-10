@@ -528,7 +528,7 @@
 <script src="/theme/dependencies/isotope/imagesloaded.pkgd.min.js"></script>
 <script src="/theme/js/modernizr-3.5.0.min.js"></script>
 <script src="/theme/dependencies/hoverdir/jquery.hoverdir.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABPIJkYFCSW_1q2toMCQQviExc7y1ucrQ&language=en"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB13ZAvCezMx5TETYIiGlzVIq65Mc2FG5g&language=en"></script>
 <script type="text/javascript" src="/theme/dependencies/gmap3.min.js"></script>
 <!-- ======= Main JS ======= -->
 <script src="/theme/js/main.js"></script>

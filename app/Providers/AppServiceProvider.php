@@ -15,6 +15,7 @@ use App\View\Components\GoodAt;
 use App\View\Components\Hero;
 use App\View\Components\History;
 use App\View\Components\Idea;
+use App\View\Components\Layout;
 use App\View\Components\Module;
 use App\View\Components\Requirement;
 use App\View\Components\service;
@@ -67,6 +68,7 @@ class AppServiceProvider extends ServiceProvider
         \Blade::component('requirement', Requirement::class);
         \Blade::component('feature', Feature::class);
         \Blade::component('module', Module::class);
+        \Blade::component('layout', Layout::class);
 
 
     }
