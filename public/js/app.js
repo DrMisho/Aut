@@ -14158,6 +14158,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       Title: 'Hello There',
       dialog_add: false,
       dialog_edit: false,
+      uploader: "suite",
+      files: [],
       form: {
         id: null,
         en: {
@@ -14173,7 +14175,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         suite_order: null,
         show_order: null,
         solutions: [],
-        modules: []
+        modules: [],
+        image_id: null
       },
       solutions: [],
       solution_items: [],
@@ -14207,8 +14210,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         suite_order: null,
         show_order: null,
         solutions: [],
-        modules: []
+        modules: [],
+        image_id: null
       };
+      this.files = [];
       this.solution_value = [];
       this.module_value = [];
       this.module_items = [];
@@ -14220,7 +14225,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     edit: function edit(item) {
       this.initial();
       this.dialog_edit = true;
-      console.log(item);
+
+      if (item.image_id) {
+        this.files.push(item.image_id);
+      }
+
       this.form.suite_code = item.suite_code;
       this.form.show_order = item.show_order;
       this.form.en.name = item.en.name;
@@ -14230,6 +14239,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       this.form.en.vision = item.en.vision;
       this.form.ar.vision = item.ar.vision;
       this.form.id = item.id;
+      this.form.image_id = item.image_id;
       this.sync_value(item.id);
     },
     delete_suite: function delete_suite(item) {
@@ -14507,7 +14517,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     },
     add: function add() {
       this.initial();
-      console.log(this.social_networks);
       this.dialog = true;
     },
     edit: function edit(item) {
@@ -22431,6 +22440,24 @@ var render = function render() {
       },
       expression: "module_value"
     }
+  })], 1), _vm._v(" "), _c("v-flex", {
+    attrs: {
+      xs12: ""
+    }
+  }, [_c("file-pond-input", {
+    attrs: {
+      "accepted-file-types": "image/jpeg, image/png",
+      label: _vm.$t("app.upload_file"),
+      files: _vm.files,
+      uploader: _vm.uploader
+    },
+    model: {
+      value: _vm.form.image_id,
+      callback: function callback($$v) {
+        _vm.$set(_vm.form, "image_id", $$v);
+      },
+      expression: "form.image_id"
+    }
   })], 1)], 1)], 1), _vm._v(" "), _c("small", [_vm._v("*indicates required field")])], 1), _vm._v(" "), _c("v-card-actions", [_c("v-spacer"), _vm._v(" "), _c("v-btn", {
     attrs: {
       color: "blue darken-1",
@@ -22609,7 +22636,11 @@ var render = function render() {
       },
       expression: "form.ar.vision"
     }
-  })], 1), _vm._v(" "), _c("v-flex", [_c("v-select", {
+  })], 1), _vm._v(" "), _c("v-flex", {
+    attrs: {
+      xs12: ""
+    }
+  }, [_c("v-select", {
     attrs: {
       items: _vm.solution_items,
       box: "",
@@ -22627,7 +22658,11 @@ var render = function render() {
       },
       expression: "solution_value"
     }
-  })], 1), _vm._v(" "), _c("v-flex", [_c("v-select", {
+  })], 1), _vm._v(" "), _c("v-flex", {
+    attrs: {
+      xs12: ""
+    }
+  }, [_c("v-select", {
     attrs: {
       items: _vm.module_items,
       box: "",
@@ -22644,6 +22679,24 @@ var render = function render() {
         _vm.module_value = $$v;
       },
       expression: "module_value"
+    }
+  })], 1), _vm._v(" "), _c("v-flex", {
+    attrs: {
+      xs12: ""
+    }
+  }, [_c("file-pond-input", {
+    attrs: {
+      "accepted-file-types": "image/jpeg, image/png",
+      label: _vm.$t("app.upload_file"),
+      files: _vm.files,
+      uploader: _vm.uploader
+    },
+    model: {
+      value: _vm.form.image_id,
+      callback: function callback($$v) {
+        _vm.$set(_vm.form, "image_id", $$v);
+      },
+      expression: "form.image_id"
     }
   })], 1)], 1)], 1), _vm._v(" "), _c("small", [_vm._v("*indicates required field")])], 1), _vm._v(" "), _c("v-card-actions", [_c("v-spacer"), _vm._v(" "), _c("v-btn", {
     attrs: {
@@ -26800,8 +26853,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\Automata4\work\Automata\resources\assets\js\app.js */"./resources/assets/js/app.js");
-module.exports = __webpack_require__(/*! F:\Automata4\work\Automata\resources\assets\sass\app.scss */"./resources/assets/sass/app.scss");
+__webpack_require__(/*! D:\work\Automata\resources\assets\js\app.js */"./resources/assets/js/app.js");
+module.exports = __webpack_require__(/*! D:\work\Automata\resources\assets\sass\app.scss */"./resources/assets/sass/app.scss");
 
 
 /***/ }),

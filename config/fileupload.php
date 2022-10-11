@@ -15,4 +15,5 @@ return [
     'client_say' => App\Http\FileUploader\ClientSayFileUpload::class,
     'contribution_file' => App\Http\FileUploader\ContributionFileUpload::class,
     'contribution_image' => App\Http\FileUploader\ContributionImageUpload::class,
+    'suite' => \App\Http\FileUploader\SuiteImageUpload::class,
 ];

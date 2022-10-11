@@ -2,9 +2,9 @@
 <section class="hero overflow-hidden">
     <div class="slider slider--active">
         <div class="slider__single slider__bg container-custom" data-bg-image="theme/images/slider/1.jpg">
-            <img src="theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--one"
+            <img src="/theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--one"
                  data-animation="slideInDown" data-delay=".4s" data-duration="2s" />
-            <img src="theme/images/shape/slider-shape-2.png" alt="" class="slider__shape slider__shape--two"
+            <img src="/theme/images/shape/slider-shape-2.png" alt="" class="slider__shape slider__shape--two"
                  data-animation="slideInRight" data-delay=".5s" data-duration="2.5s" />
             <div class="container-fluid">
                 <div class="row">
@@ -19,9 +19,9 @@
             </div>
         </div>
         <div class="slider__single slider__bg container-custom" data-bg-image="theme/images/slider/2.png">
-            <img src="theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--three"
+            <img src="/theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--three"
                  data-animation="zoomIn" data-delay=".4s" data-duration="2.5s" />
-            <img src="theme/images/shape/slider-shape-4.png" alt="" class="slider__shape slider__shape--four"
+            <img src="/theme/images/shape/slider-shape-4.png" alt="" class="slider__shape slider__shape--four"
                  data-animation="slideInUp" data-delay=".3s" data-duration="2s" />
             <div class="container-fluid">
                 <div class="row">
@@ -36,9 +36,9 @@
             </div>
         </div>
         <div class="slider__single slider__bg container-custom" data-bg-image="theme/images/slider/3.jpg">
-            <img src="theme/images/shape/slider-shape-5.png" alt="Slide" class="slider__shape slider__shape--five"
+            <img src="/theme/images/shape/slider-shape-5.png" alt="Slide" class="slider__shape slider__shape--five"
                  data-animation="zoomIn" data-delay=".3s" data-duration="2s" />
-            <img src="theme/images/shape/slider-shape-6.png" alt="" class="slider__shape slider__shape--six"
+            <img src="/theme/images/shape/slider-shape-6.png" alt="" class="slider__shape slider__shape--six"
                  data-animation="slideInLeft" data-delay=".3s" data-duration="2.2s" />
             <div class="container-fluid">
                 <div class="row">
@@ -53,9 +53,9 @@
             </div>
         </div>
         <div class="slider__single slider__bg container-custom" data-bg-image="theme/images/slider/4.jpg">
-            <img src="theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--one"
+            <img src="/theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--one"
                  data-animation="slideInDown" data-delay=".4s" data-duration="2s" />
-            <img src="theme/images/shape/slider-shape-2.png" alt="" class="slider__shape slider__shape--two"
+            <img src="/theme/images/shape/slider-shape-2.png" alt="" class="slider__shape slider__shape--two"
                  data-animation="slideInRight" data-delay=".5s" data-duration="2.5s" />
             <div class="container-fluid">
                 <div class="row">
@@ -70,9 +70,9 @@
             </div>
         </div>
         <div class="slider__single slider__bg container-custom" data-bg-image="theme/images/slider/5.jpg">
-            <img src="theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--three"
+            <img src="/theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--three"
                  data-animation="zoomIn" data-delay=".4s" data-duration="2.5s" />
-            <img src="theme/images/shape/slider-shape-4.png" alt="" class="slider__shape slider__shape--four"
+            <img src="/theme/images/shape/slider-shape-4.png" alt="" class="slider__shape slider__shape--four"
                  data-animation="slideInUp" data-delay=".3s" data-duration="2s" />
             <div class="container-fluid">
                 <div class="row">
@@ -87,9 +87,9 @@
             </div>
         </div>
         <div class="slider__single slider__bg container-custom" data-bg-image="theme/images/slider/6.jpg">
-            <img src="theme/images/shape/slider-shape-5.png" alt="Slide" class="slider__shape slider__shape--five"
+            <img src="/theme/images/shape/slider-shape-5.png" alt="Slide" class="slider__shape slider__shape--five"
                  data-animation="zoomIn" data-delay=".3s" data-duration="2s" />
-            <img src="theme/images/shape/slider-shape-6.png" alt="" class="slider__shape slider__shape--six"
+            <img src="/theme/images/shape/slider-shape-6.png" alt="" class="slider__shape slider__shape--six"
                  data-animation="slideInLeft" data-delay=".3s" data-duration="2.2s" />
             <div class="container-fluid">
                 <div class="row">
@@ -104,9 +104,9 @@
             </div>
         </div>
         <div class="slider__single slider__bg container-custom" data-bg-image="theme/images/slider/7.jpg">
-            <img src="theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--one"
+            <img src="/theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--one"
                  data-animation="slideInDown" data-delay=".4s" data-duration="2s" />
-            <img src="theme/images/shape/slider-shape-2.png" alt="" class="slider__shape slider__shape--two"
+            <img src="/theme/images/shape/slider-shape-2.png" alt="" class="slider__shape slider__shape--two"
                  data-animation="slideInRight" data-delay=".5s" data-duration="2.5s" />
             <div class="container-fluid">
                 <div class="row">
@@ -125,9 +125,9 @@
             </div>
         </div>
         <div class="slider__single slider__bg container-custom" data-bg-image="theme/images/slider/8.jpg">
-            <img src="theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--three"
+            <img src="/theme/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--three"
                  data-animation="zoomIn" data-delay=".4s" data-duration="2.5s" />
-            <img src="theme/images/shape/slider-shape-4.png" alt="" class="slider__shape slider__shape--four"
+            <img src="/theme/images/shape/slider-shape-4.png" alt="" class="slider__shape slider__shape--four"
                  data-animation="slideInUp" data-delay=".3s" data-duration="2s" />
             <div class="container-fluid">
                 <div class="row">
@@ -142,9 +142,9 @@
             </div>
         </div>
         <div class="slider__single slider__bg container-custom" data-bg-image="theme/images/slider/9.jpg">
-            <img src="theme/images/shape/slider-shape-5.png" alt="Slide" class="slider__shape slider__shape--five"
+            <img src="/theme/images/shape/slider-shape-5.png" alt="Slide" class="slider__shape slider__shape--five"
                  data-animation="zoomIn" data-delay=".3s" data-duration="2s" />
-            <img src="theme/images/shape/slider-shape-6.png" alt="" class="slider__shape slider__shape--six"
+            <img src="/theme/images/shape/slider-shape-6.png" alt="" class="slider__shape slider__shape--six"
                  data-animation="slideInLeft" data-delay=".3s" data-duration="2.2s" />
             <div class="container-fluid">
                 <div class="row">

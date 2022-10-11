@@ -26,7 +26,7 @@
             </div>
             <div class="col-lg-6 offset-lg-1 mb-30 text-md-center">
                 <div class="about-content__image about-content__image_right position-relative">
-                    <img width="690" height="617" src="theme/images/home1/about-right-image-1.jpg"
+                    <img width="690" height="617" src="/theme/images/home1/about-right-image-1.jpg"
                          alt="About Our RadiusTheme Company" class="about-img wow fadeInRight" data-wow-delay="1s"
                          data-wow-duration="1.2s" />
                     <div class="about-content__experience">

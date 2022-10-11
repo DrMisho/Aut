@@ -18,7 +18,7 @@
                         class="about-image about-image--feature position-relative"
                 >
                     <img
-                            src="theme/images/home3/about-thumb-chose.jpg"
+                            src="/theme/images/home3/about-thumb-chose.jpg"
                             alt="About"
                             class="about-image__agency_big wow fadeInDown"
                             data-wow-delay=".2s"

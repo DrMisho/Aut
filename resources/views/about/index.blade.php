@@ -4,7 +4,7 @@
     <section class="hero-inner">
         <div
                 class="hero-inner__bg"
-                data-bg-image="theme/images/bg/about-us.jpg"
+                data-bg-image="/theme/images/bg/about-us.jpg"
         >
             <div class="container">
                 <div class="row">
@@ -114,13 +114,13 @@
                             class="about-image about-image--agency position-relative"
                     >
                         <img
-                                src="theme/images/home3/about-thumb-agency1.jpg"
+                                src="/theme/images/home3/about-thumb-agency1.jpg"
                                 alt="About"
                                 class="about-image__agency_big wow fadeInDown mb-30"
                                 data-wow-delay=".2s"
                         />
                         <img
-                                src="theme/images/home3/about-thumb-agency2.jpg"
+                                src="/theme/images/home3/about-thumb-agency2.jpg"
                                 alt="About"
                                 class="about-image__agency_small wow fadeInUp mb-30"
                                 data-wow-delay=".4s"

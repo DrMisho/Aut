@@ -2,11 +2,11 @@
     <div class="blog-item blog-item--software">
         <header class="blog-item__header header">
             <img width="551" height="395" class="blog-item__img"
-                 src="{{  $competition->image_path  }}" alt="{{  $competition->translate('en')->title  }}" />
+                 src="/{{  $competition->image_path  }}" alt="{{  $competition->title  }}" />
             <ul class="meta">
                 <li class="blog-item__list list">
                     <i class="far fa-user icon"></i>
-                    <span class="name name--poster">By {{  $competition->team->translate('en')->name  }}</span>
+                    <span class="name name--poster">By {{  $competition->team->name  }}</span>
                 </li>
                 <li class="blog-item__list list">
                     <i class="far fa-calendar icon"></i>
@@ -16,10 +16,10 @@
         </header>
         <div class="blog-item__div content">
             <h3 class="blog-item__title">
-                {!!  $competition->translate('en')->title  !!}
+                {!!  $competition->title  !!}
             </h3>
             <p class="blog-item__text">
-                {!!  $competition->translate('en')->position  !!}
+                {!!  $competition->position  !!}
             </p>
         </div>
     </div>

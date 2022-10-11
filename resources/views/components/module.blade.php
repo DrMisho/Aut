@@ -2,7 +2,7 @@
     <div class="col-lg-6 offset-lg-3">
         <div class="section-heading text-center mb-20">
             <span class="section-heading__title_small">
-              {{  $suite->solution->translate('en')->name  }}
+              {{  $suite->solution->name  }}
             </span>
         </div>
     </div>
@@ -22,7 +22,7 @@
                                     aria-expanded="false"
                                     aria-controls="collapse{{$module->module->module_code}}"
                             >
-                                {{  $module->module->translate('en')->name  }}
+                                {{  $module->module->name  }}
                             </button>
                         </h2>
                         <div
@@ -33,7 +33,7 @@
                         >
                             <div class="accordion-body">
                                 <p>
-                                    {!!  $module->module->translate('en')->description  !!}
+                                    {!!  $module->module->description  !!}
                                 </p>
                             </div>
                         </div>

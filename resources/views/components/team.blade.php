@@ -16,7 +16,7 @@
                 <div class="team-block team-block--active team-block--two wow fadeInUp" data-wow-delay=".5s"
                      data-wow-duration=".7s">
                     <div class="image">
-                        <img class="image__member" src="theme/images/team/team-member-1.jpg" alt="Team Member" width="545"
+                        <img class="image__member" src="/theme/images/team/team-member-1.jpg" alt="Team Member" width="545"
                              height="663" />
                         <div class="social">
                             <ul>
@@ -54,7 +54,7 @@
             <div class="col-lg-4 col-md-6 mb-30">
                 <div class="team-block team-block--two wow fadeInUp" data-wow-delay=".9s" data-wow-duration="1s">
                     <div class="image">
-                        <img class="image__member" src="theme/images/team/team-member-2.jpg" alt="Team Member" width="545"
+                        <img class="image__member" src="/theme/images/team/team-member-2.jpg" alt="Team Member" width="545"
                              height="663" />
                         <div class="social">
                             <ul>
@@ -92,7 +92,7 @@
             <div class="col-lg-4 col-md-6 mb-30">
                 <div class="team-block team-block--two wow fadeInUp" data-wow-delay="1s" data-wow-duration="1.3s">
                     <div class="image">
-                        <img class="image__member" src="theme/images/team/team-member-3.jpg" alt="Team Member" width="545"
+                        <img class="image__member" src="/theme/images/team/team-member-3.jpg" alt="Team Member" width="545"
                              height="663" />
                         <div class="social">
                             <ul>

@@ -5,7 +5,7 @@
         <section class="hero-inner">
             <div
                     class="hero-inner__bg hero-inner__bg_three"
-                    data-bg-image="theme/images/bg/events.jpg"
+                    data-bg-image="/theme/images/bg/events.jpg"
             >
                 <div class="container">
                     <div class="row">

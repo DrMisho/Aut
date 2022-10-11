@@ -1,6 +1,6 @@
 <section
         class="contact contact--agency"
-        data-bg-image="theme/images/bg/contact-bg.jpg"
+        data-bg-image="/theme/images/bg/contact-bg.jpg"
 >
     <div class="container">
         <div class="row">

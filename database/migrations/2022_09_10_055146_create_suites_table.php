@@ -17,6 +17,7 @@ class CreateSuitesTable extends Migration
             $table->id();
             $table->char('suite_code', 3);
             $table->unsignedTinyInteger('show_order');
+            $table->foreignId('image_id')->references('id')->on('files')->onDelete('cascade')->onUpdate('cascade');
 
 
             $table->timestamps();

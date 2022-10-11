@@ -26,7 +26,8 @@ class SuiteController extends Controller
             'en.vision' => 'required|string',
             'ar.vision' => 'required|string',
             'show_order' => 'required|integer',
-            'suite_code' => 'required'
+            'suite_code' => 'required',
+            'image_id' => 'required',
         ]);
         $suite = Suite::create($attributes);
 
@@ -67,7 +68,8 @@ class SuiteController extends Controller
             'en.vision' => 'required|string',
             'ar.vision' => 'required|string',
             'show_order' => 'required|integer',
-            'suite_code' => 'required'
+            'suite_code' => 'required',
+            'image_id' => 'required',
         ]);
         $suite->update($attributes);
 

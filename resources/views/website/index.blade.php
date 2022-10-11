@@ -4,7 +4,7 @@
         <section class="hero-inner">
             <div
                     class="hero-inner__bg hero-inner__bg_three"
-                    data-bg-image="theme/images/bg/website-hero.jpg"
+                    data-bg-image="/theme/images/bg/website-hero.jpg"
             >
                 <div class="container">
                     <div class="row">
@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-lg-10 col-md-6 offset-lg-1">
                         <div class="section-heading text-center">
-                            <h1 class="section-heading__title_big"><span class="text-primary">{{  strip_tags($page->translate('en')->subtitle) }}</span></h1>
+                            <h1 class="section-heading__title_big"><span class="text-primary">{{  strip_tags($page->subtitle) }}</span></h1>
                             <br><br>
                             <div class="text-start">
                                 <span class="title aos-item aos-init aos-animate p" style="font-size: 23px;">

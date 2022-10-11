@@ -31,7 +31,7 @@
                 <div class="col-lg-4 mb-30 wow fadeInLeft" data-wow-delay=".3s" data-wow-duration=".5s">
                     <div class="review-block">
                         <div class="review-block__content">
-                            <img class="review-block__quote_icon" src="theme/images/icon/left-quote.png" alt="Quotes Left" />
+                            <img class="review-block__quote_icon" src="//theme/images/icon/left-quote.png" alt="Quotes Left" />
                             <h3 class="review-block__title">“Committed to Quality”</h3>
                             <p>
                                 Grursus mal suada faci lisis Lorem ipsum dolarorit more
@@ -42,7 +42,7 @@
                         </div>
                         <div class="review-block__auth">
                             <div class="review-block__auth_image">
-                                <a href="javascript:void(0);"><img src="theme/images/home1/review-auth-image-1.png"
+                                <a href="javascript:void(0);"><img src="/theme/images/home1/review-auth-image-1.png"
                                                                    alt="Review Author" /></a>
                             </div>
                             <div class="review-block__auth_info">
@@ -55,7 +55,7 @@
                 <div class="col-lg-4 mb-30 wow fadeInLeft" data-wow-delay=".3s" data-wow-duration=".5s">
                     <div class="review-block">
                         <div class="review-block__content">
-                            <img class="review-block__quote_icon" src="theme/images/icon/left-quote.png" alt="Quotes Left" />
+                            <img class="review-block__quote_icon" src="/theme/images/icon/left-quote.png" alt="Quotes Left" />
                             <h3 class="review-block__title">“Qualified Employees”</h3>
                             <p>
                                 Grursus mal suada faci lisis Lorem ipsum dolarorit more
@@ -66,7 +66,7 @@
                         </div>
                         <div class="review-block__auth">
                             <div class="review-block__auth_image">
-                                <a href="javascript:void(0);"><img src="theme/images/home1/review-auth-image-2.png"
+                                <a href="javascript:void(0);"><img src="/theme/images/home1/review-auth-image-2.png"
                                                                    alt="Review Author" /></a>
                             </div>
                             <div class="review-block__auth_info">
@@ -79,7 +79,7 @@
                 <div class="col-lg-4 mb-30 wow fadeInLeft" data-wow-delay=".5s" data-wow-duration=".7s">
                     <div class="review-block">
                         <div class="review-block__content">
-                            <img class="review-block__quote_icon" src="theme/images/icon/left-quote.png" alt="Quotes Left" />
+                            <img class="review-block__quote_icon" src="/theme/images/icon/left-quote.png" alt="Quotes Left" />
                             <h3 class="review-block__title">“Satisfied Clients”</h3>
                             <p>
                                 Grursus mal suada faci lisis Lorem ipsum dolarorit more
@@ -90,7 +90,7 @@
                         </div>
                         <div class="review-block__auth">
                             <div class="review-block__auth_image">
-                                <a href="javascript:void(0);"><img src="theme/images/home1/review-auth-image-3.png"
+                                <a href="javascript:void(0);"><img src="/theme/images/home1/review-auth-image-3.png"
                                                                    alt="Review Author" /></a>
                             </div>
                             <div class="review-block__auth_info">
@@ -103,7 +103,7 @@
                 <div class="col-lg-4 mb-30 wow fadeInLeft" data-wow-delay=".9s" data-wow-duration="1s">
                     <div class="review-block">
                         <div class="review-block__content">
-                            <img class="review-block__quote_icon" src="theme/images/icon/left-quote.png" alt="Quotes Left" />
+                            <img class="review-block__quote_icon" src="/theme/images/icon/left-quote.png" alt="Quotes Left" />
                             <h3 class="review-block__title">“Qualified Employees”</h3>
                             <p>
                                 Grursus mal suada faci lisis Lorem ipsum dolarorit more
@@ -114,7 +114,7 @@
                         </div>
                         <div class="review-block__auth">
                             <div class="review-block__auth_image">
-                                <a href="javascript:void(0);"><img src="theme/images/home1/review-auth-image-1.png"
+                                <a href="javascript:void(0);"><img src="/theme/images/home1/review-auth-image-1.png"
                                                                    alt="Review Author" /></a>
                             </div>
                             <div class="review-block__auth_info">

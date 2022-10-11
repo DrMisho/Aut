@@ -58,6 +58,17 @@
                                             multiple
                                         ></v-select>
                                     </v-flex>
+
+                                    <v-flex xs12>
+                                      <file-pond-input
+                                          v-model="form.image_id"
+                                          accepted-file-types="image/jpeg, image/png"
+                                          :label="$t('app.upload_file')"
+                                          :files="files"
+                                          :uploader="uploader"
+                                      />
+                                    </v-flex>
+
                                 </v-layout>
                             </v-container>
                             <small>*indicates required field</small>
@@ -106,7 +117,7 @@
                                     <v-flex xs12>
                                         <v-text-field label="Vision (العربية)" required v-model="form.ar.vision"></v-text-field>
                                     </v-flex>
-                                    <v-flex>
+                                    <v-flex xs12>
                                         <v-select
                                             @change="append_solution"
                                             v-model="solution_value"
@@ -117,7 +128,7 @@
                                             multiple
                                         ></v-select>
                                     </v-flex>
-                                    <v-flex>
+                                    <v-flex xs12>
                                         <v-select
                                             @change="append_module"
                                             v-model="module_value"
@@ -128,6 +139,17 @@
                                             multiple
                                         ></v-select>
                                     </v-flex>
+
+                                    <v-flex xs12>
+                                      <file-pond-input
+                                          v-model="form.image_id"
+                                          accepted-file-types="image/jpeg, image/png"
+                                          :label="$t('app.upload_file')"
+                                          :files="files"
+                                          :uploader="uploader"
+                                      />
+                                    </v-flex>
+
                                 </v-layout>
                             </v-container>
                             <small>*indicates required field</small>
@@ -163,6 +185,9 @@ import Seo from '../../../../Aut/SeoBuilder/assets/js/components/Seo.vue';
                 dialog_add: false,
                 dialog_edit: false,
 
+                uploader: "suite",
+                files: [],
+
                 form: {
                     id: null,
                     en: {name: '', long_name: '', vision: ''},
@@ -170,7 +195,8 @@ import Seo from '../../../../Aut/SeoBuilder/assets/js/components/Seo.vue';
                     suite_order: null,
                     show_order: null,
                     solutions: [],
-                    modules: []
+                    modules: [],
+                    image_id: null
                 },
 
                 solutions: [],
@@ -202,8 +228,10 @@ import Seo from '../../../../Aut/SeoBuilder/assets/js/components/Seo.vue';
                             suite_order: null,
                             show_order: null,
                             solutions: [],
-                            modules: []
+                            modules: [],
+                            image_id: null,
                         }
+                        this.files = [];
                         this.solution_value = []
                         this.module_value = []
                         this.module_items = []
@@ -217,7 +245,10 @@ import Seo from '../../../../Aut/SeoBuilder/assets/js/components/Seo.vue';
                 {
                     this.initial();
                     this.dialog_edit = true;
-                    console.log(item)
+                    if (item.image_id) {
+                      this.files.push(item.image_id);
+                    }
+
                     this.form.suite_code = item.suite_code;
                     this.form.show_order = item.show_order;
                     this.form.en.name = item.en.name;
@@ -227,6 +258,7 @@ import Seo from '../../../../Aut/SeoBuilder/assets/js/components/Seo.vue';
                     this.form.en.vision = item.en.vision;
                     this.form.ar.vision = item.ar.vision;
                     this.form.id = item.id;
+                    this.form.image_id = item.image_id;
                     this.sync_value(item.id);
 
                 },

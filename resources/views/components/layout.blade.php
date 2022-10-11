@@ -204,9 +204,13 @@
                                 <li class="list">
                                     <a class="animation" href="/contact">Contact</a>
                                 </li>
-                                <li class="list">
-                                    <a class="animation" href="/contact">العربية</a>
-                                </li>
+                                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                    <li>
+                                        <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                            {{ $properties['native'] }}
+                                        </a>
+                                    </li>
+                                @endforeach
                                 <li class="list">
                                     <div class="search search--circle">
                                         <a href="#template-search"><i class="fas fa-search"></i></a>
@@ -297,6 +301,9 @@
                     </li>
                     <li class="list menu-item-parent">
                         <a class="animation" href="/contact">Contact</a>
+                    </li>
+                    <li class="list menu-item-parent">
+                        <a class="animation" href="/contact">العربية</a>
                     </li>
                     <li>
                         <div class="search search--circle">

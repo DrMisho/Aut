@@ -5,7 +5,7 @@
         <section class="hero-inner">
             <div
                 class="hero-inner__bg hero-inner__bg_three"
-                data-bg-image="theme/images/bg/clients.jpg"
+                data-bg-image="/theme/images/bg/clients.jpg"
             >
                 <div class="container">
                     <div class="row">
@@ -69,7 +69,7 @@
                                     <button class="services-key__navbar_link nav-link" id="local-tab"
                                        type="button" role="tab" aria-selected="true"
                                     >
-                                        {{  $country->translate('en')->name  }}
+                                        {{  $country->name  }}
                                     </button>
                                 </li>
                                 @endforeach
@@ -86,7 +86,7 @@
                                     <li data-filter=".{{ $suite->suite_code }}" class="nav-item services-key__navbar_item" role="presentation">
                                         <button  class="services-key__navbar_link nav-link"
                                                 type="button" role="tab" aria-selected="false">
-                                            {{  $suite->translate('en')->name  }}
+                                            {{  $suite->name  }}
                                         </button>
                                     </li>
                                 @endforeach
@@ -102,6 +102,48 @@
                         </div>
                         @endforeach
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+                class="review review-agency--bg pt-120 pb-100 primary-bg-color"
+                data-bg-image="/theme/images/shape/testimonial-bg-home-3.png"
+        >
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                        <div
+                                class="section-heading section-heading--startup text-center mb-45"
+                        >
+                <span class="section-heading__title_small white-bg">
+                  Testimonials
+                </span>
+                            <h2 class="section-heading__title_big text-white">
+                                What Our Customers Say About Us?
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row review-agency--active">
+                    @foreach($client_say as $say)
+                    <div class="col-12 mb-30">
+                        <div class="review-block review-agency">
+                            <div class="review-block__content content">
+                                <i class="flaticon flaticon-right-quote quote"></i>
+                                <p class="paragraph">
+                                    {!! $say->say !!}
+                                </p>
+                                <div class="review-block__auth auth">
+                                    <div class="review-block__auth_info info">
+                                        <h3 class="review-block__auth_name">{{ $say->client_name }}</h3>
+                                        <span class="review-block__auth_title">{{ $say->company }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>

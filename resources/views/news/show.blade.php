@@ -43,7 +43,7 @@
                                     width="1170"
                                     height="660"
                                     src="/{{ $news->image_path }}"
-                                    alt="{{ $news->translate('en')->title }}"
+                                    alt="{{ $news->title }}"
                             />
                         </div>
                     </div>
@@ -59,10 +59,10 @@
                             </header>
                             <article>
                                 <h2 class="title title--big mb-10 text-center">
-                                    {{ $news->translate('en')->title }}
+                                    {{ $news->title }}
                                 </h2>
                                 <p class="paragraph mb-30">
-                                    {!! $news->translate('en')->content !!}
+                                    {!! $news->content !!}
                                 </p>
                             </article>
                             <footer>
@@ -71,7 +71,7 @@
                                         <div class="tags">
                                             <div class="tag-list">
                                                 @foreach($news->tag as $tag)
-                                                    <a href="#" class="tag-link">{{ $tag->translate('en')->name }}</a>
+                                                    <a href="#" class="tag-link">{{ $tag->name }}</a>
                                                 @endforeach
                                             </div>
                                         </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\DataTables;
 
+use App\Http\FileUploader\BoxImageUpload;
 use App\Models\Box;
 use Aut\VueDataTable\Builders\DateInput;
 use Aut\VueDataTable\Builders\TextInput;
@@ -9,6 +10,7 @@ use Aut\VueDataTable\Builders\HiddenInput;
 use Aut\VueDataTable\Builders\CkEditor;
 use Aut\VueDataTable\ApiResources\VueDataTable;
 use Aut\VueDataTable\Traits\WithTranslation;
+use Aut\VueDataTable\Builders\FilePond;
 
 
 class BoxesDataTable extends VueDataTable
@@ -25,6 +27,8 @@ class BoxesDataTable extends VueDataTable
             'code' => $this->code,
             'title' => $this->title,
             'content' => $this->content,
+            'image_path' => $this->image_path,
+            'image_id' => $this->image_id,
             'show_order' =>$this->show_order,
             'created_at' => $this->created_at->format('Y-m-d'),
         ];
@@ -40,6 +44,9 @@ class BoxesDataTable extends VueDataTable
             TextInput::make('show_order')->label(trans('box.show_order')),
 
             DateInput::make('created_at')->label(trans('box.publish_at')),
+
+            FilePond::make('image_id', 'image_path', BoxImageUpload::class)->label(trans('box.image')),
+
         ];
     }
 

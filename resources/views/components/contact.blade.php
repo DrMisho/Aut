@@ -1,9 +1,9 @@
 <!-- ======= Contact Area Start ======= -->
-<section class="contact contact--bg contact--padding" data-bg-image="theme/images/shape/contact-bg-shape.png">
+<section class="contact contact--bg contact--padding" data-bg-image="/theme/images/shape/contact-bg-shape.png">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5 mb-30">
-                <div class="contact-address contact-address--bg" data-bg-image="theme/images/bg/contact-address-bg.jpg">
+                <div class="contact-address contact-address--bg" data-bg-image="/theme/images/bg/contact-address-bg.jpg">
                     <ul>
                         <li class="contact-address__item mb-20">
                             <div class="contact-address__item_icon">

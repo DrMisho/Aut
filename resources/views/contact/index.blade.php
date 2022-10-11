@@ -53,11 +53,11 @@
                         <div class="contact-item">
                             <img
                                     class="icon"
-                                    src="{{ $branch->image_path }}"
+                                    src="/{{ $branch->image_path }}"
                                     alt=""
                             />
                             <h3 class="title title--heading">Office Location</h3>
-                            <p class="address">{!! $branch->translate('en')->address !!}</p>
+                            <p class="address">{!! $branch->address !!}</p>
                             <p><span class="text-primary">Call Us: </span>{{ $branch->phone }}</p>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                                         >
                                             <option selected="selected">Select One</option>
                                             @foreach($countries as $country)
-                                                <option value="{{ $country->translate('en')->name }}">{{ $country->translate('en')->name }}</option>
+                                                <option value="{{ $country->name }}">{{ $country->name }}</option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -143,7 +143,7 @@
                                         >
                                             <option selected="selected">Select One</option>
                                             @foreach($job_titles as $job_title)
-                                                <option value="{{ $job_title->translate('en')->name }}">{{ $job_title->translate('en')->name }}</option>
+                                                <option value="{{ $job_title->name }}">{{ $job_title->name }}</option>
                                             @endforeach
                                         </select>
                                     </div>

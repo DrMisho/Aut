@@ -52,15 +52,15 @@
                                         <div class="services__item_overlay services-key__content_overlay"></div>
                                         <header class="services__item_header services-key__content_header text-center">
                                             <div style="z-index: 3;position: relative;right: 5px;top: 5px; background: inherit">
-                                                <img class="services__tech_icon" src="/theme/images/icon/{{ $suite->suite_code }}.png" alt="{{ $suite->translate('en')->name }}">
+                                                <img class="services__tech_icon" src="/theme/images/icon/{{ $suite->suite_code }}.png" alt="{{ $suite->name }}">
                                             </div>
                                             <h2 class="services__item_title services-key__content_title">
-                                                <a href="/suites/{{ $suite->suite_code }}">{{ $suite->translate('en')->name }}</a>
+                                                <a href="/suites/{{ $suite->suite_code }}">{{ $suite->name }}</a>
                                             </h2>
                                         </header>
                                         <div class="services__item_content services-key__content_text">
                                             <p class="services__item_paragraph services-key__content_paragraph">
-                                                {{ $suite->translate('en')->long_name }}
+                                                {{ $suite->long_name }}
                                             </p>
                                             <a class="services-key__content_link" href="/suites/{{ $suite->suite_code }}">Discover now</a>
                                         </div>
@@ -113,7 +113,7 @@
                                     @foreach($clients as $client)
                                     <li class="services-partners__item wow fadeInUp" data-wow-delay=".2s">
                                         <a class="" href="{{ $client->website }}"><img
-                                                    src="{{$client->logo_path}}" alt="" /></a>
+                                                    src="/{{$client->logo_path}}" alt="" /></a>
                                     </li>
                                     {{-- more partners --}}
                                     @endforeach

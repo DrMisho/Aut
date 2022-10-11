@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-breadcrumb">
-                                <h1 class="heading">{{  $suite->translate('en')->long_name  }}</h1>
+                                <h1 class="heading">{{  $suite->long_name  }}</h1>
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item">
@@ -21,7 +21,7 @@
                                                 class="breadcrumb-item active"
                                                 aria-current="page"
                                         >
-                                            {{  $suite->translate('en')->name  }}
+                                            {{  $suite->name  }}
                                         </li>
                                     </ol>
                                 </nav>
@@ -86,7 +86,7 @@
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                            {!!  $suite->translate('en')->vision  !!}
+                                            {!!  $suite->vision  !!}
                                         </div>
                                     </div>
                                 </div>

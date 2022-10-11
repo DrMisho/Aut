@@ -17,6 +17,12 @@ class CreateBoxesTable extends Migration
             $table->id();
             $table->string('code');
             $table->unsignedTinyInteger('show_order');
+            $table->foreignId('image_id')
+                ->nullable()
+                ->references('id')
+                ->on('files')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
             
             $table->timestamps();
             $table->softDeletes();

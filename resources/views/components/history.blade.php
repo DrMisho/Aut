@@ -32,7 +32,7 @@
                                     </div>
                                     <div class="timeline-image">
                                         <img
-                                                src="theme/images/timeline/{{$loop->iteration}}.jpg"
+                                                src="/theme/images/timeline/{{$loop->iteration}}.jpg"
                                                 alt=""
                                         />
                                     </div>

@@ -13,12 +13,12 @@
         <div class="case-choose__content">
             <h3 class="heading">
                 <a href="/events/{{ $event->id }}"
-                >{!! $event->translate('en')->title !!}</a>
+                >{!! $event->title !!}</a>
             </h3>
             <p class="paragraph">
-                {!! $event->translate('en')->description !!}
+                {!! $event->description !!}
             </p>
-            <span>{!! $event->city->translate('en')->name !!} | {!! $event->translate('en')->location !!}</span>
+            <span>{!! $event->city->name !!} | {!! $event->location !!}</span>
             <br>
             <a class="link" href="/events/{{ $event->id }}"
             >View Event</a>

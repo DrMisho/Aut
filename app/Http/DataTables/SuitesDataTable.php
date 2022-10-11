@@ -9,6 +9,7 @@ use App\Http\DataTables\Actions\AddSeoAction;
 use App\Http\DataTables\Actions\AddSuiteAction;
 use App\Http\DataTables\Actions\DeleteSuiteAction;
 use App\Http\DataTables\Actions\EditSuiteAction;
+use App\Http\FileUploader\SuiteImageUpload;
 use App\Http\Resources\SolutionsResource;
 use App\Models\Module;
 use App\Models\SolutionModule;
@@ -21,6 +22,7 @@ use Aut\VueDataTable\Builders\BelongsToMany;
 use Aut\VueDataTable\ApiResources\VueDataTable;
 use Aut\VueDataTable\Traits\WithTranslation;
 use Aut\VueDataTable\OptionsBuilder\ChipsOptions;
+use Aut\VueDataTable\Builders\FilePond;
 
 class SuitesDataTable extends VueDataTable
 {
@@ -46,6 +48,8 @@ class SuitesDataTable extends VueDataTable
             'model' => $this->getMorphClass(),
             'solutions' => SolutionsResource::collection($this->solutions),
             'solution_id' => SolutionsResource::collection($this->solutions)->pluck('id'),
+            'image_path' => $this->image_path,
+            'image_id' => $this->image_id,
             'modules' => Module::query()->whereIn('id', SolutionModule::query()->whereIn('solution_suite_id', $this->suiteSolutions->pluck('id'))->get()->pluck('module_id'))->get()->pluck('name'),
         ];
     }
@@ -66,6 +70,7 @@ class SuitesDataTable extends VueDataTable
                 ->optionsTemplate(new ChipsOptions),
 
             TextInput::make('modules')->label(trans('suite.module_solution')),
+            FilePond::make('image_id', 'image_path', SuiteImageUpload::class)->label(trans('suite.image')),
         ];
     }
     public static function actions()

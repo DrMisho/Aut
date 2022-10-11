@@ -5,7 +5,7 @@
         <section class="hero-inner">
             <div
                 class="hero-inner__bg hero-inner__bg_three"
-                data-bg-image="theme/images/bg/news.jpeg"
+                data-bg-image="/theme/images/bg/news.jpeg"
             >
                 <div class="container">
                     <div class="row">
@@ -47,14 +47,14 @@
                                             width="551"
                                             height="395"
                                             class="blog-item__img"
-                                            src="{{ $new->image_path }}"
-                                            alt="{{ $new->translate('en')->title }}"
+                                            src="/{{ $new->image_path }}"
+                                            alt="{{ $new->title }}"
                                     />
                                 </a>
                                 <ul class="meta">
                                     <li class="blog-item__list list">
                                         <i class="far fa-user icon"></i>
-                                        <span class="name name--poster">{{ $new->city->translate('en')->name }}</span>
+                                        <span class="name name--poster">{{ $new->city->name }}</span>
                                     </li>
                                     <li class="blog-item__list list">
                                         <i class="far fa-calendar icon"></i>
@@ -65,14 +65,14 @@
                             <article class="blog-item__article content">
                                 <h3 class="blog-item__title">
                                     <a href="/news/{{$new->id}}">
-                                        {{ $new->translate('en')->title }}
+                                        {{ $new->title }}
                                     </a>
                                 </h3>
                                 <p class="blog-item__text">
-                                   {!! substr($new->translate('en')->content, 0, $length = 100) !!}.....
+                                   {!! substr($new->content, 0, $length = 100) !!}.....
                                 </p>
                                 @foreach($new->tag as $tag)
-                                <span class="tags"><a href="#">{{ $tag->translate('en')->name }}</a>,</span>
+                                <span class="tags"><a href="#">{{ $tag->name }}</a>,</span>
                                 @endforeach
                                 <br>
                                 <span class="tags"><a href="/news/{{$new->id}}">View Details</a>,</span>

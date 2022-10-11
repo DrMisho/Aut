@@ -239,7 +239,6 @@
             },
             add() {
                 this.initial();
-                console.log(this.social_networks)
                 this.dialog = true;
             },
             edit(item) {
