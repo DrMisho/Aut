@@ -8,7 +8,7 @@ return [
 
     'useAcceptLanguageHeader' => true,
 
-    'hideDefaultLocaleInURL' => true,
+    'hideDefaultLocaleInURL' => false,
 
     'localesOrder' => [
 		'ar',

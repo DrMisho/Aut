@@ -13,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+Route::group([
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+], function()
 {
     Route::get('/', function (\Illuminate\Http\Request $request) {
         return view('index', [
