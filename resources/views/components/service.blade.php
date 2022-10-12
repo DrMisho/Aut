@@ -5,10 +5,10 @@
             <div class="col-lg-10 offset-lg-1">
                 <div class="section-heading text-center mb-30">
               <span class="section-heading__title_small">
-                We Offer best IT Services
+                    {{ __('message.service_box_title') }}
               </span>
                     <h2 class="section-heading__title_big">
-                        Easy Solutions for all Difficult IT Problems
+                        {{ __('message.service_box_subtitle') }}
                     </h2>
                 </div>
             </div>
@@ -20,19 +20,19 @@
                         <li class="nav-item services-key__navbar_item" role="presentation">
                             <button class="services-key__navbar_link nav-link active" id="home-tab" data-bs-toggle="tab"
                                     data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-                                <i class="flaticon flaticon-settings"></i> Our Solutions
+                                <i class="flaticon flaticon-settings"></i> {{ __('message.service_box_solution') }}
                             </button>
                         </li>
                         <li class="nav-item services-key__navbar_item" role="presentation">
                             <button class="services-key__navbar_link nav-link" id="profile-tab" data-bs-toggle="tab"
                                     data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                                <i class="flaticon flaticon-tech"></i> Technology Index
+                                <i class="flaticon flaticon-tech"></i> {{ __('message.service_box_technology') }}
                             </button>
                         </li>
                         <li class="nav-item services-key__navbar_item" role="presentation">
                             <button class="services-key__navbar_link nav-link" id="contact-tab" data-bs-toggle="tab"
                                     data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-                                <i class="flaticon flaticon-team"></i> Our Clients
+                                <i class="flaticon flaticon-team"></i> {{ __('message.service_box_client') }}
                             </button>
                         </li>
                     </ul>

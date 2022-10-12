@@ -3,6 +3,7 @@
 namespace App\Http\DataTables;
 
 use App\Http\FileUploader\BoxImageUpload;
+use App\Http\FileUploader\TeamImageUpload;
 use App\Models\Box;
 use Aut\VueDataTable\Builders\DateInput;
 use Aut\VueDataTable\Builders\TextInput;

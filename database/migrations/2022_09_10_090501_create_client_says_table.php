@@ -18,7 +18,6 @@ class CreateClientSaysTable extends Migration
             $table->string('client_name');
             $table->text('say');
             $table->foreignId('file_id')->references('id')->on('files')->onDelete('cascade')->onUpdate('cascade');
-            $table->string('company')->nullable();
             
             $table->timestamps();
             $table->softDeletes();

@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class Box extends Component
 {
+    public $boxes;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($boxes)
     {
-        //
+        $this->boxes = $boxes;
     }
 
     /**

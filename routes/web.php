@@ -21,6 +21,7 @@ Route::group([
     Route::get('/', function (\Illuminate\Http\Request $request) {
         return view('index', [
             'title' => 'Home Page',
+            'boxes' => \App\Models\Box::query()->whereIn('code', ['only-technology', 'did-you-hear', 'hidden-treasure'])->get(),
             'clients' => \App\Models\Client::query()->orderBy('show_order')->get(),
             'suites' => \App\Models\Suite::query()->orderBy('show_order')->get()
         ]);

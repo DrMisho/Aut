@@ -188,8 +188,8 @@ return [
         Aut\VueDataTable\Providers\VueDataTableServiceProvider::class,
         Aut\Autocomplete\Providers\AutocompleteServiceProvider::class,
         Aut\FileUpload\Providers\FileUploadServiceProvider::class,
-        //Aut\SeoBuilder\Providers\SeoBuilderServiceProvider::class,
-        //Aut\SiteBuilder\Providers\SiteBuilderServiceProvider::class,
+        Aut\SeoBuilder\Providers\SeoBuilderServiceProvider::class,
+        Aut\SiteBuilder\Providers\SiteBuilderServiceProvider::class,
 
         /*
          * Package Service Providers...

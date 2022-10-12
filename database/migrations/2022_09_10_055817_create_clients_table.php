@@ -17,9 +17,15 @@ class CreateClientsTable extends Migration
                     ->references('id')->on('countries')
                     ->onDelete('cascade');
 
-            $table->foreignId('testimonial_id')->references('id')->on('files')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('testimonial_id')
+                    ->nullable()
+                    ->references('id')
+                    ->on('files')
+                    ->onDelete('cascade')
+                    ->onUpdate('cascade');
+
             $table->foreignId('suite_id')
-                    ->references('id')->on('suites')
+                    ->nullable()->references('id')->on('suites')
                     ->onDelete('cascade');
 
             $table->timestamps();

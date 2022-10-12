@@ -19,7 +19,7 @@
 
         <x-about/>
 
-        <x-box/>
+        <x-box :boxes="$boxes"/>
 
         <x-service :clients="$clients" :suites="$suites"/>
 

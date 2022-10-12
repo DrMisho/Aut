@@ -32,7 +32,7 @@ class ClientsDataTable extends VueDataTable
             'country' => $this->country->name,
             'country_id' => $this->country->id,
             'name' => $this->name,
-            'suite' => $this->suite->name,
+            'suite' => isset($this->suite->name)? $this->suite->name: '',
             'suite_id' => $this->suite_id,
             'testimonial_id' => $this->testimonial_id,
             'file_path' => $this->file_path,
